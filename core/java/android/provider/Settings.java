@@ -1,4 +1,3 @@
-
 /*
  * Copyright (C) 2006 The Android Open Source Project
  *
@@ -296,6 +295,7 @@ public final class Settings {
      * Input: Nothing.
      * <p>
      * Output: Nothing.
+
      */
     @SdkConstant(SdkConstantType.ACTIVITY_INTENT_ACTION)
     public static final String ACTION_WIFI_SETTINGS =
