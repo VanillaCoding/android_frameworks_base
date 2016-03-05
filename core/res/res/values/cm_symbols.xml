@@ -52,17 +52,9 @@
     <java-symbol type="string" name="global_action_current_user" />
     <java-symbol type="dimen" name="global_actions_avatar_size" />
 
-    <!-- Theme install failure notification -->
-    <java-symbol type="string" name="theme_install_error_title" />
-    <java-symbol type="string" name="theme_install_error_message" />
-
     <!-- Stylus gestures -->
     <java-symbol type="bool" name="config_stylusGestures" />
     <java-symbol type="string" name="stylus_app_not_installed" />
-
-    <!-- Theme reset notification -->
-    <java-symbol type="string" name="theme_reset_notification_title" />
-    <java-symbol type="string" name="theme_reset_notification_body" />
 
     <!-- global actions (zen mode buttons) -->
     <java-symbol type="id" name="option4" />
@@ -103,7 +95,6 @@
     <java-symbol type="id" name="permission_remember_choice_text" />
     <java-symbol type="string" name="allow" />
     <java-symbol type="string" name="deny" />
-    <java-symbol type="string" name="permission" />
     <java-symbol type="layout" name="permission_confirmation_dialog" />
     <java-symbol type="array" name="app_ops_labels" />
 
@@ -115,6 +106,9 @@
 
     <!-- PlatLogo -->
     <java-symbol type="drawable" name="platlogo_cm" />
+
+    <!-- Automatic brightness enhancements -->
+    <java-symbol type="integer" name="config_autoBrightnessBrighteningLightFastDebounce"/>
 
     <!-- LiveDisplay -->
     <java-symbol type="string" name="live_display_title" />
@@ -137,4 +131,27 @@
     <java-symbol type="string" name="tethered_notification_no_device_message" />
     <java-symbol type="string" name="tethered_notification_one_device_message" />
     <java-symbol type="string" name="tethered_notification_multi_device_message" />
+
+    <!-- Wifi idle time default -->
+    <java-symbol type="integer" name="def_wifi_idle_ms" />
+
+    <!-- Carrier Apps -->
+    <java-symbol type="array" name="config_enabledPreinstalledCarrierApps" />
+
+    <!-- KeyGuard -->
+    <java-symbol type="string" name="kg_sub_separator" />
+
+    <!-- Protected Apps -->
+    <java-symbol type="drawable" name="stat_notify_protected" />
+    <java-symbol type="string" name="notify_package_component_protected_title" />
+    <java-symbol type="string" name="notify_package_component_protected_text" />
+
+    <!-- Restricted fingerprint config -->
+    <java-symbol type="bool" name="config_fingerprintRestrictedToSystemAndOwner" />
+
+    <!-- Show battery fully charged notification -->
+    <java-symbol type="bool" name="config_showBatteryFullyChargedNotification" />
+    <java-symbol type="string" name="notify_battery_fully_charged_title" />
+    <java-symbol type="string" name="notify_battery_fully_charged_text" />
+
 </resources>

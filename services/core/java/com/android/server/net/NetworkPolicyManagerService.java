@@ -247,6 +247,7 @@ public class NetworkPolicyManagerService extends INetworkPolicyManager.Stub {
     private static final int MSG_RESTRICT_BACKGROUND_CHANGED = 6;
     private static final int MSG_ADVISE_PERSIST_THRESHOLD = 7;
     private static final int MSG_SCREEN_ON_CHANGED = 8;
+    private static final int MSG_PROCESS_LOW_POWER_CHANGED = 9;
 
     private final Context mContext;
     private final IActivityManager mActivityManager;
@@ -437,13 +438,10 @@ public class NetworkPolicyManagerService extends INetworkPolicyManager.Stub {
             mPowerManagerInternal.registerLowPowerModeObserver(
                     new PowerManagerInternal.LowPowerModeListener() {
                 @Override
-                public void onLowPowerModeChanged(boolean enabled) {
-                    synchronized (mRulesLock) {
-                        if (mRestrictPower != enabled) {
-                            mRestrictPower = enabled;
-                            updateRulesForGlobalChangeLocked(true);
-                        }
-                    }
+                public void onLowPowerModeChanged(final boolean enabled) {
+                    mHandler.removeMessages(MSG_PROCESS_LOW_POWER_CHANGED);
+                    Message msg = Message.obtain(mHandler, MSG_PROCESS_LOW_POWER_CHANGED, enabled);
+                    mHandler.sendMessage(msg);
                 }
             });
             mRestrictPower = mPowerManagerInternal.getLowPowerModeEnabled();
@@ -2137,12 +2135,23 @@ public class NetworkPolicyManagerService extends INetworkPolicyManager.Stub {
         uidRules.clear();
 
         // Fully update the app idle firewall chain.
+        final IPackageManager ipm = AppGlobals.getPackageManager();
         final List<UserInfo> users = mUserManager.getUsers();
         for (int ui = users.size() - 1; ui >= 0; ui--) {
             UserInfo user = users.get(ui);
             int[] idleUids = mUsageStats.getIdleUidsForUser(user.id);
             for (int uid : idleUids) {
                 if (!mPowerSaveTempWhitelistAppIds.get(UserHandle.getAppId(uid), false)) {
+                    // quick check: if this uid doesn't have INTERNET permission, it
+                    // doesn't have network access anyway, so it is a waste to mess
+                    // with it here.
+                    try {
+                        if (ipm.checkUidPermission(Manifest.permission.INTERNET, uid)
+                                != PackageManager.PERMISSION_GRANTED) {
+                            continue;
+                        }
+                    } catch (RemoteException e) {
+                    }
                     uidRules.put(uid, FIREWALL_RULE_DENY);
                 }
             }
@@ -2227,11 +2236,13 @@ public class NetworkPolicyManagerService extends INetworkPolicyManager.Stub {
 
     private boolean isUidIdle(int uid) {
         final String[] packages = mContext.getPackageManager().getPackagesForUid(uid);
-        final int userId = UserHandle.getUserId(uid);
 
-        for (String packageName : packages) {
-            if (!mUsageStats.isAppIdle(packageName, uid, userId)) {
-                return false;
+        if (packages != null) {
+            final int userId = UserHandle.getUserId(uid);
+            for (String packageName : packages) {
+                if (!mUsageStats.isAppIdle(packageName, uid, userId)) {
+                    return false;
+                }
             }
         }
         return true;
@@ -2428,6 +2439,16 @@ public class NetworkPolicyManagerService extends INetworkPolicyManager.Stub {
                 }
                 case MSG_SCREEN_ON_CHANGED: {
                     updateScreenOn();
+                    return true;
+                }
+                case MSG_PROCESS_LOW_POWER_CHANGED: {
+                    boolean enabled = (Boolean) msg.obj;
+                    synchronized (mRulesLock) {
+                        if (mRestrictPower != enabled) {
+                            mRestrictPower = enabled;
+                            updateRulesForGlobalChangeLocked(true);
+                        }
+                    }
                     return true;
                 }
                 default: {

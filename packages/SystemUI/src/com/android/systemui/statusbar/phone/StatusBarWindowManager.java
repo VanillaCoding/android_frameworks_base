@@ -21,22 +21,22 @@ import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
 import android.graphics.Point;
 import android.graphics.PixelFormat;
-import android.os.Handler;
 import android.os.SystemProperties;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Display;
 import android.view.SurfaceSession;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.view.WindowManager;
-import android.view.WindowManagerPolicy;
 
 import com.android.keyguard.R;
 import com.android.systemui.keyguard.KeyguardViewMediator;
 import com.android.systemui.statusbar.BaseStatusBar;
 import com.android.systemui.statusbar.StatusBarState;
 import com.android.systemui.statusbar.policy.KeyguardMonitor;
+import cyanogenmod.providers.CMSettings;
+import org.cyanogenmod.internal.util.CmLockPatternUtils;
 
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
@@ -260,7 +260,8 @@ public class StatusBarWindowManager implements KeyguardMonitor.Callback {
         boolean isblur = false;
         if (mCurrentState.keyguardShowing && mKeyguardBlurEnabled
                 && !mCurrentState.keyguardOccluded
-                && !mShowingMedia) {
+                && !mShowingMedia
+                && !isShowingLiveLockScreen()) {
             isblur = true;
         }
         if (mKeyguardBlur != null) {
@@ -339,6 +340,12 @@ public class StatusBarWindowManager implements KeyguardMonitor.Callback {
         applyKeyguardBlurShow();
     }
 
+    public void setKeyguardExternalViewFocus(boolean hasFocus) {
+        mCurrentState.keyguardExternalViewHasFocus = hasFocus;
+        // make the keyguard occluded so the external view gets full focus
+        setKeyguardOccluded(hasFocus);
+    }
+
     /**
      * @param state The {@link StatusBarState} of the status bar.
      */
@@ -386,6 +393,17 @@ public class StatusBarWindowManager implements KeyguardMonitor.Callback {
         pw.println(mCurrentState);
     }
 
+    public boolean keyguardExternalViewHasFocus() {
+        return mCurrentState.keyguardExternalViewHasFocus;
+    }
+
+    private boolean isShowingLiveLockScreen() {
+        CmLockPatternUtils lockPatternUtils = new CmLockPatternUtils(mContext);
+        return (CMSettings.Secure.getInt(mContext.getContentResolver(),
+                CMSettings.Secure.LIVE_LOCK_SCREEN_ENABLED, 0) == 1)
+                && lockPatternUtils.isThirdPartyKeyguardEnabled();
+    }
+
     private static class State {
         boolean keyguardShowing;
         boolean keyguardOccluded;
@@ -400,6 +418,7 @@ public class StatusBarWindowManager implements KeyguardMonitor.Callback {
         boolean forceStatusBarVisible;
         boolean forceCollapsed;
         boolean forceDozeBrightness;
+        boolean keyguardExternalViewHasFocus;
 
         /**
          * The {@link BaseStatusBar} state from the status bar.

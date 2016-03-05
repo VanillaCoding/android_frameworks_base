@@ -39,6 +39,9 @@
     <!-- Padding end for weather text -->
     <dimen name="status_bar_weather_padding_end">16dp</dimen>
 
+    <!-- height of the qs page indicator -->
+    <dimen name="qs_panel_page_indicator_height">8dp</dimen>
+
     <dimen name="lockscreen_icon_side_padding">10dp</dimen>
     <dimen name="lockscreen_icon_size">35dp</dimen>
     <dimen name="phone_side_padding">10dp</dimen>
@@ -49,4 +52,8 @@
     <dimen name="qs_detail_item_height_twoline">72dp</dimen>
 
     <dimen name="detail_exterior_padding">8dp</dimen>
+
+    <!-- Size of unlock FAB used when showing external keyguard views -->
+    <dimen name="unlock_fab_size">48dp</dimen>
+
 </resources>

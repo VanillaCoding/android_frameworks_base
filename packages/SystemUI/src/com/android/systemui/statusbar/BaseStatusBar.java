@@ -251,6 +251,10 @@ public abstract class BaseStatusBar extends SystemUI implements
 
     protected AssistManager mAssistManager;
 
+    // last theme that was applied in order to detect theme change (as opposed
+    // to some other configuration change).
+    protected ThemeConfig mCurrentTheme;
+
     @Override  // NotificationData.Environment
     public boolean isDeviceProvisioned() {
         return mDeviceProvisioned;
@@ -1341,28 +1345,50 @@ public abstract class BaseStatusBar extends SystemUI implements
         View contentViewLocal = null;
         View bigContentViewLocal = null;
         View headsUpContentViewLocal = null;
-        final ThemeConfig themeConfig = mContext.getResources().getConfiguration().themeConfig;
-        String themePackageName = themeConfig != null ?
-                themeConfig.getOverlayPkgNameForApp(mContext.getPackageName()) : null;
+        String themePackageName = mCurrentTheme != null
+                ? mCurrentTheme.getOverlayPkgNameForApp(sbn.getPackageName()) : null;
+        String statusBarThemePackageName = mCurrentTheme != null
+                ? mCurrentTheme.getOverlayForStatusBar() : null;
+
         try {
             contentViewLocal = contentView.apply(
                     sbn.getPackageContext(mContext),
                     contentContainer,
                     mOnClickHandler,
-                    themePackageName);
+                    statusBarThemePackageName);
+
+            final int platformTemplateRootViewId =
+                    com.android.internal.R.id.status_bar_latest_event_content;
+            final String inflationThemePackageName;
+            if (themePackageName != null
+                    && !TextUtils.equals(themePackageName, statusBarThemePackageName)
+                    && contentViewLocal.getId() != platformTemplateRootViewId) {
+                // This notification uses custom RemoteViews, and its app uses a different
+                // theme than the status bar. Re-inflate the views using the app's theme,
+                // as the RemoteViews likely will contain resources of the app, not the platform
+                inflationThemePackageName = themePackageName;
+                contentViewLocal = contentView.apply(
+                        sbn.getPackageContext(mContext),
+                        contentContainer,
+                        mOnClickHandler,
+                        inflationThemePackageName);
+            } else {
+                inflationThemePackageName = statusBarThemePackageName;
+            }
+
             if (bigContentView != null) {
                 bigContentViewLocal = bigContentView.apply(
                         sbn.getPackageContext(mContext),
                         contentContainer,
                         mOnClickHandler,
-                        themePackageName);
+                        inflationThemePackageName);
             }
             if (headsUpContentView != null) {
                 headsUpContentViewLocal = headsUpContentView.apply(
                         sbn.getPackageContext(mContext),
                         contentContainer,
                         mOnClickHandler,
-                        themePackageName);
+                        inflationThemePackageName);
             }
         }
         catch (RuntimeException e) {
@@ -1427,49 +1453,12 @@ public abstract class BaseStatusBar extends SystemUI implements
                 title.setText(entry.notification.getPackageName());
             }
 
-            final ImageView icon = (ImageView) publicViewLocal.findViewById(R.id.icon);
-            final ImageView profileBadge = (ImageView) publicViewLocal.findViewById(
-                    R.id.profile_badge_line3);
-
-            final StatusBarIcon ic = new StatusBarIcon(
-                    entry.notification.getUser(),
-                    entry.notification.getPackageName(),
-                    entry.notification.getNotification().getSmallIcon(),
-                    entry.notification.getNotification().iconLevel,
-                    entry.notification.getNotification().number,
-                    entry.notification.getNotification().tickerText);
-
-            Drawable iconDrawable = StatusBarIconView.getIcon(mContext, ic);
-            icon.setImageDrawable(iconDrawable);
-            if (entry.targetSdk >= Build.VERSION_CODES.LOLLIPOP
-                    || mNotificationColorUtil.isGrayscaleIcon(iconDrawable)) {
-                icon.setBackgroundResource(
-                        com.android.internal.R.drawable.notification_icon_legacy_bg);
-                int padding = mContext.getResources().getDimensionPixelSize(
-                        com.android.internal.R.dimen.notification_large_icon_circle_padding);
-                icon.setPadding(padding, padding, padding, padding);
-                if (sbn.getNotification().color != Notification.COLOR_DEFAULT) {
-                    icon.getBackground().setColorFilter(
-                            sbn.getNotification().color, PorterDuff.Mode.SRC_ATOP);
-                }
-            }
-
-            if (profileBadge != null) {
-                Drawable profileDrawable = mContext.getPackageManager().getUserBadgeForDensity(
-                        entry.notification.getUser(), 0);
-                if (profileDrawable != null) {
-                    profileBadge.setImageDrawable(profileDrawable);
-                    profileBadge.setVisibility(View.VISIBLE);
-                } else {
-                    profileBadge.setVisibility(View.GONE);
-                }
-            }
+            updatePublicViewProperties(publicViewLocal, entry);
 
             final View privateTime = contentViewLocal.findViewById(com.android.internal.R.id.time);
             final DateTimeView time = (DateTimeView) publicViewLocal.findViewById(R.id.time);
             if (privateTime != null && privateTime.getVisibility() == View.VISIBLE) {
                 time.setVisibility(View.VISIBLE);
-                time.setTime(entry.notification.getNotification().when);
             }
 
             final TextView text = (TextView) publicViewLocal.findViewById(R.id.text);
@@ -1981,7 +1970,9 @@ public abstract class BaseStatusBar extends SystemUI implements
             entry.icon.set(ic);
             inflateViews(entry, mStackScroller);
         }
-        updateHeadsUp(key, entry, shouldInterrupt, alertAgain);
+        if (mUseHeadsUp) {
+            updateHeadsUp(key, entry, shouldInterrupt, alertAgain);
+        }
         mNotificationData.updateRanking(ranking);
         updateNotifications();
 
@@ -2075,6 +2066,7 @@ public abstract class BaseStatusBar extends SystemUI implements
         final Notification publicVersion = notification.getNotification().publicVersion;
         final RemoteViews publicContentView = publicVersion != null ? publicVersion.contentView
                 : null;
+        final View publicLocalView = entry.getPublicContentView();
 
         // Reapply the RemoteViews
         contentView.reapply(mContext, entry.getContentView(), mOnClickHandler);
@@ -2088,9 +2080,13 @@ public abstract class BaseStatusBar extends SystemUI implements
             headsUpContentView.reapply(notification.getPackageContext(mContext),
                     headsUpChild, mOnClickHandler);
         }
-        if (publicContentView != null && entry.getPublicContentView() != null) {
-            publicContentView.reapply(notification.getPackageContext(mContext),
-                    entry.getPublicContentView(), mOnClickHandler);
+        if (publicLocalView != null) {
+            if (publicContentView != null) {
+                publicContentView.reapply(notification.getPackageContext(mContext),
+                        publicLocalView, mOnClickHandler);
+            } else {
+                updatePublicViewProperties(publicLocalView, entry);
+            }
         }
         // update the contentIntent
         mNotificationClicker.register(entry.row, notification);
@@ -2103,6 +2099,55 @@ public abstract class BaseStatusBar extends SystemUI implements
 
     protected void notifyHeadsUpScreenOff() {
         maybeEscalateHeadsUp();
+    }
+
+    private void updatePublicViewProperties(View publicView, Entry entry) {
+        final StatusBarNotification n = entry.notification;
+        final ImageView icon = (ImageView) publicView.findViewById(R.id.icon);
+        final ImageView profileBadge =
+                (ImageView) publicView.findViewById(R.id.profile_badge_line3);
+        final DateTimeView time = (DateTimeView) publicView.findViewById(R.id.time);
+
+        if (icon != null) {
+            final StatusBarIcon ic = new StatusBarIcon(
+                    n.getUser(), n.getPackageName(),
+                    n.getNotification().getSmallIcon(),
+                    n.getNotification().iconLevel,
+                    n.getNotification().number,
+                    n.getNotification().tickerText);
+
+            Drawable iconDrawable = StatusBarIconView.getIcon(mContext, ic);
+            icon.setImageDrawable(iconDrawable);
+            if (entry.targetSdk >= Build.VERSION_CODES.LOLLIPOP
+                    || mNotificationColorUtil.isGrayscaleIcon(iconDrawable)) {
+                icon.setBackgroundResource(
+                        com.android.internal.R.drawable.notification_icon_legacy_bg);
+                int padding = mContext.getResources().getDimensionPixelSize(
+                        com.android.internal.R.dimen.notification_large_icon_circle_padding);
+                icon.setPadding(padding, padding, padding, padding);
+                if (n.getNotification().color != Notification.COLOR_DEFAULT) {
+                    icon.getBackground().setColorFilter(
+                            n.getNotification().color, PorterDuff.Mode.SRC_ATOP);
+                }
+            } else {
+                icon.setBackgroundDrawable(null);
+            }
+         }
+
+        if (time != null) {
+            time.setTime(entry.notification.getNotification().when);
+        }
+
+        if (profileBadge != null) {
+            Drawable profileDrawable = mContext.getPackageManager().getUserBadgeForDensity(
+                    n.getUser(), 0);
+            if (profileDrawable != null) {
+                profileBadge.setImageDrawable(profileDrawable);
+                profileBadge.setVisibility(View.VISIBLE);
+            } else {
+                profileBadge.setVisibility(View.GONE);
+            }
+        }
     }
 
     private boolean alertAgain(Entry oldEntry, Notification newNotification) {

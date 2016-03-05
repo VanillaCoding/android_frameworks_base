@@ -148,7 +148,11 @@ void RenderProxy::initialize(const sp<ANativeWindow>& window) {
     SETUP_TASK(initialize);
     args->context = mContext;
     args->window = window.get();
+#ifdef REQUIRES_SYNCHRONOUS_SETSURFACE
+    postAndWait(task);
+#else
     post(task);
+#endif
 }
 
 CREATE_BRIDGE2(updateSurface, CanvasContext* context, ANativeWindow* window) {
@@ -383,6 +387,12 @@ void RenderProxy::fence() {
     SETUP_TASK(fence);
     UNUSED(args);
     postAndWait(task);
+}
+
+void RenderProxy::staticFence() {
+    SETUP_TASK(fence);
+    UNUSED(args);
+    staticPostAndWait(task);
 }
 
 CREATE_BRIDGE1(stopDrawing, CanvasContext* context) {
