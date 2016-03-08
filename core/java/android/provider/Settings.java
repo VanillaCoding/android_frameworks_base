@@ -3521,7 +3521,7 @@ public final class Settings {
           * 2 - Volume up/down moves cursor right/left
           * @hide
           */
-         public static final String VOLUME_KEY_CUgit pull https://github.com/CyanogenMod/android_frameworks_base.git cm-13.0RSOR_CONTROL = "volume_key_cursor_control";
+         public static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
 
         /**
          * Whether to enable voice wakeup.  The value is boolean (1 or 0).
