@@ -3538,7 +3538,6 @@ public final class Settings {
         public static final String VOICE_LAUNCH_INTENT = "voice_launch_intent";
 
         /**
-<<<<<<< HEAD
          * Whether to enable status and navigation bar color in battery saver mode.
          *
          * @hide
@@ -3579,13 +3578,11 @@ public final class Settings {
          */
          public static final String VOLUME_KEYS_CONTROL_RING_STREAM =
          "volume_keys_control_ring_stream";
-=======
          * Volume key controls ringtone or media sound stream
          * @hide
          */
         public static final String VOLUME_KEYS_CONTROL_RING_STREAM =
                 "volume_keys_control_ring_stream";
->>>>>>> 4fa29056b5ffa00400764a5053b78c9ad1f2e6f6
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
