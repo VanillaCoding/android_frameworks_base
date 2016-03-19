@@ -375,6 +375,10 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
 
     int mKeyguardMaxNotificationCount;
 
+    // vu logo
+    private boolean mVuLogo;
+    private ImageView vuLogo;
+
     boolean mExpandedVisible;
 
     private int mNavigationBarWindowState = WINDOW_STATE_SHOWING;
@@ -464,6 +468,8 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
                     CMSettings.System.NAVBAR_LEFT_IN_LANDSCAPE), false, this, UserHandle.USER_ALL);
             resolver.registerContentObserver(CMSettings.System.getUriFor(
                     CMSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY), false, this);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.STATUS_BAR_VU_LOGO), false, this, UserHandle.USER_ALL);
             update();
         }
 
@@ -494,6 +500,10 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
 
             // This method reads CMSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY
             updateCustomRecentsLongPressHandler(false);
+
+            mVuLogo = Settings.System.getIntForUser(resolver,
+                    Settings.System.STATUS_BAR_VU_LOGO, 0, mCurrentUserId) == 1;
+            showVuLogo(mVuLogo);
         }
     }
 
@@ -3606,6 +3616,16 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
         }
     };
 
+    public void showVuLogo(boolean show) {
+        if (mStatusBarView == null) return;
+        ContentResolver resolver = mContext.getContentResolver();
+        vuLogo = (ImageView) mStatusBarView.findViewById(R.id.vu_logo);
+        if (vuLogo != null) {
+            vuLogo.setVisibility(show ? (mVuLogo ? View.VISIBLE : View.GONE) : View.GONE);
+        }
+    }
+
+
     private BroadcastReceiver mPackageBroadcastReceiver = new BroadcastReceiver() {
         public void onReceive(Context context, Intent intent) {
             if (DEBUG) Log.v(TAG, "onReceive: " + intent);
@@ -3865,6 +3885,8 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
      * meantime, just update the things that we know change.
      */
     void updateResources(Configuration newConfig) {
+        ContentResolver resolver = mContext.getContentResolver();
+
         // detect theme change.
         ThemeConfig newTheme = newConfig != null ? newConfig.themeConfig : null;
         final boolean updateStatusBar = shouldUpdateStatusbar(mCurrentTheme, newTheme);
@@ -3872,6 +3894,11 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
         if (newTheme != null) mCurrentTheme = (ThemeConfig) newTheme.clone();
         if (updateStatusBar) {
             recreateStatusBar();
+
+            // detect VU logo state when theme change.
+            mVuLogo = Settings.System.getInt(
+                resolver, Settings.System.STATUS_BAR_VU_LOGO, 0) == 1;
+            showVuLogo(mVuLogo);
         } else {
             loadDimens();
         }
