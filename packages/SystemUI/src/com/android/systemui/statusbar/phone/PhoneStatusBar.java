@@ -3898,7 +3898,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
             // detect VU logo state when theme change.
             mVuLogo = Settings.System.getInt(
                 resolver, Settings.System.STATUS_BAR_VU_LOGO, 0) == 1;
-            showVuLogo(mVuLogo);
+            showvuLogo(mVuLogo);
         } else {
             loadDimens();
         }
