@@ -128,6 +128,7 @@
   <string name="app_ops_wifi_change">endre Wi-Fi-tilstand</string>
   <string name="app_ops_su">få root-tilgang</string>
   <string name="lock_to_app_toast_no_navbar">For å unpin denne skjermen, trykk og hold tilbake-knappen.</string>
+<<<<<<< HEAD
   <string name="live_display_auto">Automatisk</string>
   <string name="live_display_auto_summary">Juster fargetemperatur på skjermen etter solnedgang og soloppgang</string>
   <string name="live_display_off">Av</string>
@@ -139,6 +140,9 @@
   <string name="live_display_outdoor">Utendørs (sterkt sollys)</string>
   <string name="live_display_outdoor_summary">Bruk kun utendørs innstillinger</string>
   <string name="live_display_hint">LiveDisplay kan hjelpe deg med å redusere belastningen på øynene og hjelpe deg med å sove om natten. Trykk her for å prøve det ut!</string>
+=======
+  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
+>>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">Ingen tilkoblede enheter</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> tilkoblet enhet</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> tilkoblede enheter</string>

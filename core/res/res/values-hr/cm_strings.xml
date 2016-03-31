@@ -129,6 +129,7 @@
   <string name="app_ops_wifi_change">promjeni Wi-Fi stanje</string>
   <string name="app_ops_su">Zatraži root pristup</string>
   <string name="lock_to_app_toast_no_navbar">Za otkvačiti ovaj zaslon dodirnite i držite tipku za natrag</string>
+<<<<<<< HEAD
   <string name="live_display_auto">Automatski</string>
   <string name="live_display_auto_summary">Automatski prilagodi temperaturu boje zaslona nakon zalaska i izlaska sunca</string>
   <string name="live_display_off">Isključeno</string>
@@ -141,6 +142,10 @@
   <string name="live_display_outdoor_summary">Koristi samo postavke za van</string>
   <string name="live_display_hint">LiveDisplay može smanjiti naprezanje očiju i poboljšati san. Dodirnite ovdje ako ga želite isprobati!</string>
   <string name="tethered_notification_no_device_message">Uređaj nije spojen</string>
+=======
+  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
+  <string name="tethered_notification_no_device_message">Nema spojenih uređaja</string>
+>>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> povezani uređaj</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> povezanih uređaja</string>
   <string name="notify_package_component_protected_title">Blokirana aktivnost pokretanja</string>

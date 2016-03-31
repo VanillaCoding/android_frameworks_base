@@ -110,6 +110,7 @@
   <string name="app_ops_write_sms">एक एसएमएस संदेश लिखें</string>
   <string name="app_ops_su">मूल तक पहुँच प्राप्त करें</string>
   <string name="lock_to_app_toast_no_navbar">इस स्क्रीन को अनपिन करने के लिए पीछे के बटन को कुछ देर के लिए छुएँ।</string>
+<<<<<<< HEAD
   <string name="live_display_auto">स्वचालित</string>
   <string name="live_display_auto_summary">सूर्यास्त और सूर्योदय के बाद अपने आप ही स्क्रीन के रंग तापमान को समायोजित करें</string>
   <string name="live_display_off">बंद</string>
@@ -121,6 +122,9 @@
   <string name="live_display_outdoor">बाहर (तेज़ धूप)</string>
   <string name="live_display_outdoor_summary">केवल बाहर की सेटिंग का उपयोग करें</string>
   <string name="live_display_hint">लाइवडिस्प्ले आँखों पर पड़नेवाले दबाव को घटा सकता है और आपको रात को अच्छी तरह से सोने में मदद कर सकता है। इसे आज़माने के लिए यहाँ क्लिक करें।</string>
+=======
+  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
+>>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">कोई जुड़ा हुआ उपकरण नहीं है</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> जुड़ा हुआ उपकरण</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> जुड़े हुए उपकरण</string>

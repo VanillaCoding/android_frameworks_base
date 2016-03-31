@@ -129,6 +129,7 @@
   <string name="app_ops_wifi_change">změna stavu Wi\u2011Fi</string>
   <string name="app_ops_su">získat root přístup</string>
   <string name="lock_to_app_toast_no_navbar">Chcete-li odebrat tuto obrazovku, podržte tlačítko Zpět.</string>
+<<<<<<< HEAD
   <string name="live_display_auto">Automaticky</string>
   <string name="live_display_auto_summary">Automaticky upravit teplotu barev obrazovky po západu a východu slunce</string>
   <string name="live_display_off">Vypnuto</string>
@@ -140,6 +141,9 @@
   <string name="live_display_outdoor">Venku (slunečno)</string>
   <string name="live_display_outdoor_summary">Nastavení pouze pro venkovní</string>
   <string name="live_display_hint">LiveDisplay může pomoci proti namáhání očí a také spánku v noci. Dotykem zde tuto funkci můžete vyzkoušet!</string>
+=======
+  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
+>>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">Žádné připojené zařízení</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> připojené zařízení</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> připojená zařízení</string>

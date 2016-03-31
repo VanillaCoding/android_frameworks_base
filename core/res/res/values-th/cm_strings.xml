@@ -128,6 +128,7 @@
   <string name="app_ops_wifi_change">เปลี่ยนแปลงสถานะ Wi-Fi</string>
   <string name="app_ops_su">รับสิทธิผู้ดูแลระบบ</string>
   <string name="lock_to_app_toast_no_navbar">เพื่อยกเลิกการปักหมุดหน้าจอนี้ กดปุ่มกลับค้างไว้</string>
+<<<<<<< HEAD
   <string name="live_display_auto">อัตโนมัติ</string>
   <string name="live_display_auto_summary">ตั้งอุณหภูมิสีจออัตโนมัติหลังดวงอาทิตย์ขึ้นและตก</string>
   <string name="live_display_off">ปิด</string>
@@ -139,6 +140,9 @@
   <string name="live_display_outdoor">กลางแจ้ง (แดดจ้า)</string>
   <string name="live_display_outdoor_summary">ใช้การตั้งค่ากลางแจ้งเท่านั้น</string>
   <string name="live_display_hint">LiveDisplay สามารถช่วยลดอาการปวดตา และช่วยให้คุณนอนหลับในเวลากลางคืน คลิกที่นี่เพื่อลองใช้!</string>
+=======
+  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
+>>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">ไม่มีอุปกรณ์เชื่อมต่อ</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> อุปกรณ์เชื่อมต่ออยู่</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> อุปกรณ์เชื่อมต่ออยู่</string>

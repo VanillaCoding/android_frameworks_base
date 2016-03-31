@@ -112,6 +112,7 @@
   <string name="app_ops_write_sms">كتابة رسالة نصية قصيرة</string>
   <string name="app_ops_su">الحصول على صلاحيات الجذر</string>
   <string name="lock_to_app_toast_no_navbar">لإلغاء تثبيت هذه الشاشة، المس واستمر في ضغط زر الرجوع.</string>
+<<<<<<< HEAD
   <string name="live_display_auto">تلقائي</string>
   <string name="live_display_auto_summary">ضبط درجة حرارة لون للشاشة تلقائياً بعد غروب الشمس وشروق الشمس</string>
   <string name="live_display_off">إيقاف</string>
@@ -123,6 +124,9 @@
   <string name="live_display_outdoor">خارج المنزل ( شمس ساطعة)</string>
   <string name="live_display_outdoor_summary">استخدم إعدادات خارج المنزل  فقط</string>
   <string name="live_display_hint">ميزة LiveDisplay يمكن أن تساعد في تقليل إجهاد العين والمساعدة على النوم في الليل. انقر هنا لتجربته!</string>
+=======
+  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
+>>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">لا يوجد جهاز متصل</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s </xliff:g> جهاز متصل</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> أجهزة متصلة</string>

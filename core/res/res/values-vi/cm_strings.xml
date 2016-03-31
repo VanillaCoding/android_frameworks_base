@@ -112,6 +112,7 @@
   <string name="app_ops_write_sms">soạn tin nhắn SMS</string>
   <string name="app_ops_su">lấy quyền truy cập root</string>
   <string name="lock_to_app_toast_no_navbar">Để bỏ ghim màn hình này, hãy chạm và giữ phím Quay lại.</string>
+<<<<<<< HEAD
   <string name="live_display_auto">Tự động</string>
   <string name="live_display_auto_summary">Tự động chỉnh nhiệt độ màu của màn hình theo ngày và đêm</string>
   <string name="live_display_off">Tắt</string>
@@ -123,6 +124,9 @@
   <string name="live_display_outdoor">Ngoài trời (ánh sáng mặt trời)</string>
   <string name="live_display_outdoor_summary">Chỉ sử dụng cài đặt ngoài trời</string>
   <string name="live_display_hint">LiveDisplay có thể giúp giảm mỏi mắt và giúp bạn ngủ vào ban đêm. Nhấn vào đây để thử!</string>
+=======
+  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
+>>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">Không có thiết bị kết nối</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> thiết bị đã kết nối</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> thiết bị đã kết nối</string>

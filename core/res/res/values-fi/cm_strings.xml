@@ -129,6 +129,7 @@
   <string name="app_ops_wifi_change">vaihtaa Wi-Fi:n tilaa</string>
   <string name="app_ops_su">pääkäyttäjän oikeudet</string>
   <string name="lock_to_app_toast_no_navbar">Irrottaaksesi tämän näytön, paina ja pidä Takasin-näppäintä pohjassa.</string>
+<<<<<<< HEAD
   <string name="live_display_auto">Automaattinen</string>
   <string name="live_display_auto_summary">Säädä näytön värilämpötilaa automaattisesti auringonlaskun ja -nousun jälkeen</string>
   <string name="live_display_off">Pois käytöstä</string>
@@ -140,6 +141,9 @@
   <string name="live_display_outdoor">Ulkoilma (kirkas aurinko)</string>
   <string name="live_display_outdoor_summary">Käytä vain ulkoilma-asetusta</string>
   <string name="live_display_hint">LiveDisplay voi vähentää silmien rasitusta ja auttaa nukkumaan öisin. Kokeile sitä painamalla tästä!</string>
+=======
+  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
+>>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">Ei kytkettyä laitetta</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> yhdistetty laite</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> yhdistettyä laitetta</string>

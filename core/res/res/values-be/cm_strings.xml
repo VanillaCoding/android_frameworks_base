@@ -128,6 +128,7 @@
   <string name="app_ops_wifi_change">Змяніць стан Wi-Fi</string>
   <string name="app_ops_su">атрымаць правы суперкарыстальніка</string>
   <string name="lock_to_app_toast_no_navbar">Каб адмацаваць экран, націсніце і ўтрымвайце кнопку \"Назад\".</string>
+<<<<<<< HEAD
   <string name="live_display_auto">Аўтаматычна</string>
   <string name="live_display_auto_summary">Аўтаматычная падладка колеравай тэмпературы экрана пасля заходу і ўзыходу сонца</string>
   <string name="live_display_off">Адключыць</string>
@@ -139,6 +140,9 @@
   <string name="live_display_outdoor">На вуліцы (яскравае сонца)</string>
   <string name="live_display_outdoor_summary">Толькі вулічны рэжым</string>
   <string name="live_display_hint">LiveDisplay дапаможа зменшыць глядзельную напругу і палепшыць сон. Націсніце тут, каб паспрабаваць!</string>
+=======
+  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
+>>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">Няма падлучаных прылад</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> падлучаная прылада</string>
   <string name="tethered_notification_multi_device_message">Падлучана прылад: <xliff:g id="count">%1$s</xliff:g></string>

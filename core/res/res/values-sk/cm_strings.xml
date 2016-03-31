@@ -112,6 +112,7 @@
   <string name="app_ops_write_sms">napísať správu SMS</string>
   <string name="app_ops_su">získať root prístup</string>
   <string name="lock_to_app_toast_no_navbar">Na odopnutie tejto obrazovky stlačte a podržte tlačidlo Späť.</string>
+<<<<<<< HEAD
   <string name="live_display_auto">Automatické</string>
   <string name="live_display_auto_summary">Automaticky upraviť teplotu farieb obrazovky po západe a východe slnka</string>
   <string name="live_display_off">Vypnuté</string>
@@ -123,6 +124,9 @@
   <string name="live_display_outdoor">Vonku (jasné slnko)</string>
   <string name="live_display_outdoor_summary">Používať len nastavenia pre vonkajšie prostredie</string>
   <string name="live_display_hint">LiveDisplay môže pomôcť znížiť únavu očí a pomôže vám spať v noci. Kliknite sem a vyskúšajte túto funkciu!</string>
+=======
+  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
+>>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">Žiadne pripojené zariadenie</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> pripojené zariadenie</string>
   <string name="tethered_notification_multi_device_message">Pripojené zariadenia: <xliff:g id="count">%1$s</xliff:g></string>

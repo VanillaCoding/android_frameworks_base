@@ -103,6 +103,7 @@
   <string name="app_ops_write_mms">write an MMS message</string>
   <string name="app_ops_write_sms">write an SMS message</string>
   <string name="app_ops_su">get root access</string>
+<<<<<<< HEAD
   <string name="live_display_auto">Automatic</string>
   <string name="live_display_auto_summary">Automatically adjust color temperature of screen after sunset and sunrise</string>
   <string name="live_display_off">Off</string>
@@ -114,6 +115,10 @@
   <string name="live_display_outdoor">Outdoor (bright sun)</string>
   <string name="live_display_outdoor_summary">Use outdoor settings only</string>
   <string name="live_display_hint">LiveDisplay can help reduce eyestrain and help you sleep at night. Click here to try it out!</string>
+=======
+  <!-- Notify user that they are in Lock-to-app (for devices without navbar) -->
+  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
+>>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">No connected device</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> connected device</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> connected devices</string>

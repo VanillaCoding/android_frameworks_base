@@ -128,6 +128,7 @@
   <string name="app_ops_wifi_change">change Wi-Fi state</string>
   <string name="app_ops_su">get root access</string>
   <string name="lock_to_app_toast_no_navbar">To unpin this screen, touch and hold the Back button.</string>
+<<<<<<< HEAD
   <string name="live_display_auto">Automatic</string>
   <string name="live_display_auto_summary">Automatically adjust color temperature of screen after sunset and sunrise</string>
   <string name="live_display_off">Off</string>
@@ -139,6 +140,9 @@
   <string name="live_display_outdoor">Outdoor (bright sun)</string>
   <string name="live_display_outdoor_summary">Use outdoor settings only</string>
   <string name="live_display_hint">LiveDisplay can help reduce eyestrain and help you sleep at night. Click here to try it out!</string>
+=======
+  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
+>>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">No connected device</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> connected device</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> connected devices</string>
