@@ -135,7 +135,7 @@
     <!-- Content description of the battery mode tile in quick settings when on, balanced mode (not shown on the screen). [CHAR LIMIT=NONE] -->
     <string name="accessibility_quick_settings_perf_profile_bal">Battery mode: balanced mode.</string>
     <!-- Content description of the battery mode tile in quick settings when on, performance mode (not shown on the screen). [CHAR LIMIT=NONE] -->
-    <string name="accessibility_quick_settings_perf_profile_perf">Battery mode: performance mode.</string>
+    <string name="accessibility_quick_settings_perf_profile_perf">Battery mode: Roast da Unicorn (Performance).</string>
     <!-- Content description of the battery mode tile in quick settings when on, efficiency mode (not shown on the screen). [CHAR LIMIT=NONE] -->
     <string name="accessibility_quick_settings_perf_profile_bias_power">Battery mode: efficiency mode.</string>
     <!-- Content description of the battery mode tile in quick settings when on, quick mode (not shown on the screen). [CHAR LIMIT=NONE] -->
