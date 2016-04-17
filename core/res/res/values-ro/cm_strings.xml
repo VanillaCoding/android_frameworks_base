@@ -128,7 +128,6 @@
   <string name="app_ops_wifi_change">schimbă starea Wi-Fi</string>
   <string name="app_ops_su">obțină acces root</string>
   <string name="lock_to_app_toast_no_navbar">Pentru a anula fixarea acestui ecran, atingeți și țineți apăsat butonul Înapoi.</string>
-<<<<<<< HEAD
   <string name="live_display_auto">Automat</string>
   <string name="live_display_auto_summary">Reglează automat temperatura de culoare de pe ecran după apus și răsărit</string>
   <string name="live_display_off">Oprit</string>
@@ -140,9 +139,6 @@
   <string name="live_display_outdoor">În aer liber (soare strălucitor)</string>
   <string name="live_display_outdoor_summary">Utilizați numai setările în aer liber</string>
   <string name="live_display_hint">LiveDisplay poate reduce oboseala ochilor și vă poate ajuta să dormiți noaptea. Apăsați aici pentru a-l încerca!</string>
-=======
-  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
->>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">Niciun dispozitiv conectat</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s </xliff:g> dispozitiv conectat</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s </xliff:g> dispozitive conectate</string>

@@ -112,7 +112,6 @@
   <string name="app_ops_write_sms">نوشتن پیامک</string>
   <string name="app_ops_su">دریافت دسترسی روت</string>
   <string name="lock_to_app_toast_no_navbar">برای از سنجاق درآوردن این صفحه، دکمه بازگشت را زده و نگه دارید.</string>
-<<<<<<< HEAD
   <string name="live_display_auto">خودکار</string>
   <string name="live_display_auto_summary">تنظیم خودکار دمای رنگ صفحه بعد از طلوع و غروب خورشید</string>
   <string name="live_display_off">خاموش</string>
@@ -124,9 +123,6 @@
   <string name="live_display_outdoor">فضای باز (نور خورشید)</string>
   <string name="live_display_outdoor_summary">فقط استفاده از تنظیمات فضای باز</string>
   <string name="live_display_hint">نمایش پویا کمک می‌کند چشم‌هایتان کم‌تر خسته شده و شب راحت‌تر به خواب بروید. برای امتحان آن اینجا کلیک کنید!</string>
-=======
-  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
->>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">هیچ دستگاه متصلی وجود ندارد</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s </xliff:g> دستگاه متصل</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> دستگاه متصل</string>

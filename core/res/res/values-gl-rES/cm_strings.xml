@@ -117,7 +117,6 @@
   <string name="app_ops_get_accounts">obter as contas do dispositivo</string>
   <string name="app_ops_su">Obter acceso como superusuario</string>
   <string name="lock_to_app_toast_no_navbar">Para deixar de fixar esta pantalla, mantén tocado o botón Atrás.</string>
-<<<<<<< HEAD
   <string name="live_display_auto">Automático</string>
   <string name="live_display_auto_summary">Axustar automaticamente os tons da pantalla ao amencer e o solpor</string>
   <string name="live_display_off">Apagado</string>
@@ -129,9 +128,6 @@
   <string name="live_display_outdoor">Exteriores (iluminado)</string>
   <string name="live_display_outdoor_summary">Utilizar tan só os axustes de exteriores</string>
   <string name="live_display_hint">O modo LiveDisplay pode axudar coa dor de ollos e a conciliar o sono. Toca aquí para probalo!</string>
-=======
-  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
->>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">Dispositivo non conectado</string>
   <string name="tethered_notification_one_device_message">Dispositivo <xliff:g id="count">%1$s</xliff:g> conectado</string>
   <string name="tethered_notification_multi_device_message">Dispositivos <xliff:g id="count">%1$s</xliff:g> conectados</string>

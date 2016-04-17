@@ -129,7 +129,6 @@
   <string name="app_ops_wifi_change">verander Wi-Fi status</string>
   <string name="app_ops_su">kry root toegang</string>
   <string name="lock_to_app_toast_no_navbar">Om die skerm te ontspeld, raak en hou die Terug knoppie.</string>
-<<<<<<< HEAD
   <string name="live_display_auto">Outomaties</string>
   <string name="live_display_auto_summary">Kleurtemperatuur van die skerm sal outomaties aanpas na sononder en sonop</string>
   <string name="live_display_off">Af</string>
@@ -141,9 +140,6 @@
   <string name="live_display_outdoor">Buitekant (helder son)</string>
   <string name="live_display_outdoor_summary">Alleenlik gebruik buite instellings</string>
   <string name="live_display_hint">LewendigeVertoning kan jou oogspanning verminder en help jou slaap in die nag. Klik hier om dit uit te probeer!</string>
-=======
-  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
->>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">Geen gekoppelde toestel</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> gekoppelde toestel</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> gekoppelde toestelle</string>

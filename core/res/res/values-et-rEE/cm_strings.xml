@@ -112,7 +112,6 @@
   <string name="app_ops_write_sms">kirjutada SMS sõnumit</string>
   <string name="app_ops_su">saada root ligipääsu</string>
   <string name="lock_to_app_toast_no_navbar">Selle ekraani vabastamiseks puudutage ja hoidke all Tagasi nuppu.</string>
-<<<<<<< HEAD
   <string name="live_display_auto">Automaatne</string>
   <string name="live_display_auto_summary">Automaatselt reguleeri ekraani värvitemperaturri pärast päikeseloojangut ja -tõusu</string>
   <string name="live_display_off">Väljas</string>
@@ -124,9 +123,6 @@
   <string name="live_display_outdoor">Õues (ere päike)</string>
   <string name="live_display_outdoor_summary">Kasuta ainult õue seadeid</string>
   <string name="live_display_hint">LiveDisplay võimaldab vähendada silmade pinget ja lasta sul öösel magada. Kliki siin et seda proovida!</string>
-=======
-  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
->>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">Pole ühtegi ühendatud seadet</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> ühendatud seade</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> ühendatud seadet</string>

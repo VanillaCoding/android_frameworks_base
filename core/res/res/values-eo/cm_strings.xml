@@ -108,7 +108,6 @@
   <string name="app_ops_write_sms">skribi SMS-mesaĝon</string>
   <string name="app_ops_su">akiri radikuzantajn permesojn</string>
   <string name="lock_to_app_toast_no_navbar">Por malŝlosi tiun ekranon, tuŝetu kaj tenu la Reen butonon.</string>
-<<<<<<< HEAD
   <string name="live_display_auto">Aŭtomata</string>
   <string name="live_display_auto_summary">Aŭtomate alĝustigi kolortemperaturon de la ekrano post sunsubiro kaj suniĝo</string>
   <string name="live_display_off">For</string>
@@ -120,9 +119,6 @@
   <string name="live_display_outdoor">Ekstere (brila suno)</string>
   <string name="live_display_outdoor_summary">Uzi nur eksterajn parametrojn</string>
   <string name="live_display_hint">LiveDisplay povas helpi vin malgrandigi okulo-streĉon nokte. Alklaku tie por provi!</string>
-=======
-  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
->>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">Neniu konektata aparato</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> konektita aparato</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> konektitaj aparatoj</string>

@@ -112,7 +112,6 @@
   <string name="app_ops_write_sms">SMS mesajı yazın</string>
   <string name="app_ops_su">root müraciəti əldə et</string>
   <string name="lock_to_app_toast_no_navbar">Bu ekranı çıxarmaq üçün Geri düyməsinə toxunub basılı tutun.</string>
-<<<<<<< HEAD
   <string name="live_display_auto">Avtomatik</string>
   <string name="live_display_auto_summary">Gün çıxandan və batandan sonra ekranın rəng hərarətini avtomatik tənzimləyər</string>
   <string name="live_display_off">Bağlı</string>
@@ -124,9 +123,6 @@
   <string name="live_display_outdoor">Açıq hava (parlaq günəş)</string>
   <string name="live_display_outdoor_summary">Yalnız açıq hava tənziml. istifadə et</string>
   <string name="live_display_hint">LiveDisplay göz yorğunluğunuzu azaldıb gecələri yuxulamağınıza kömək edə bilər. Yoxlamaq üçün bura klikləyin!</string>
-=======
-  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
->>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">Bağlı cihaz yoxdur</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> cihaz bağlıdır</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> cihaz bağlıdır</string>

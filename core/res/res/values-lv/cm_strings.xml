@@ -99,11 +99,6 @@
   <string name="app_ops_write_mms">rakstīt multivides ziņu</string>
   <string name="app_ops_write_sms">rakstīt īsziņu</string>
   <string name="app_ops_su">saņemt root piekļuvi</string>
-<<<<<<< HEAD
-=======
-  <!-- Notify user that they are in Lock-to-app (for devices without navbar) -->
-  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
->>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">Nav pievienota ierīce</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s </xliff:g> pievienota ierīce</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s </xliff:g> pievienotas ierīces</string>

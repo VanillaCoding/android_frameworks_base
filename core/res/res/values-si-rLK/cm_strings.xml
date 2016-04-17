@@ -84,19 +84,4 @@
   <string name="app_ops_use_voice_volume">හඬ ඇමතුම් ශබ්දය පාලනය</string>
   <string name="app_ops_write_mms">MMS පණිවිඩයක් ලිවීම</string>
   <string name="app_ops_write_sms">කෙටි පණිවිඩයක් ලිවීම</string>
-<<<<<<< HEAD
-=======
-  <!-- Notify user that they are in Lock-to-app (for devices without navbar) -->
-  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
-  <!-- Keyguard strings -->
-  <!-- Sequence of characters used to separate carrier message strings in keyguard. Typically just vertical line
-         with spaces on either side. [CHAR LIMIT=3] -->
-  <!-- Protected Apps Notification -->
-  <!-- Battery fully charged notification -->
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose
-         whether they want to allow the application to do this. -->
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose
-         whether they want to allow the application to do this. -->
-  <!-- Uicc hotswapped event configuration needed notification -->
->>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
 </resources>

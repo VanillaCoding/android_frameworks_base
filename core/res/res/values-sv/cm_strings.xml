@@ -129,7 +129,6 @@
   <string name="app_ops_wifi_change">ändra Wi\u2011Fi status</string>
   <string name="app_ops_su">få root-åtkomst</string>
   <string name="lock_to_app_toast_no_navbar">För att frigöra denna skärm, tryck och håll nere Bakåt-knappen.</string>
-<<<<<<< HEAD
   <string name="live_display_auto">Automatisk</string>
   <string name="live_display_auto_summary">Justera automatiskt skärmens färgtemperatur efter solnedgång och soluppgång</string>
   <string name="live_display_off">Av</string>
@@ -141,9 +140,6 @@
   <string name="live_display_outdoor">Utomhus (stark sol)</string>
   <string name="live_display_outdoor_summary">Använd endast utomhusläge</string>
   <string name="live_display_hint">LiveDisplay kan minska överansträngning av ögon och hjälpa dig med nattsömnen. Klicka här för att prova!</string>
-=======
-  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
->>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">Ingen ansluten enhet</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> ansluten enhet</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> anslutna enheter</string>

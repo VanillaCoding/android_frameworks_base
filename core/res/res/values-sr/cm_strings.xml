@@ -129,7 +129,6 @@
   <string name="app_ops_wifi_change">промени Wi-Fi стање</string>
   <string name="app_ops_su">дај root приступ</string>
   <string name="lock_to_app_toast_no_navbar">Да искључиш овај екран додирни и држи дугме за назад.</string>
-<<<<<<< HEAD
   <string name="live_display_auto">Аутоматски</string>
   <string name="live_display_auto_summary">Аутоматски прилагоди температуру боје екрана после сумрака и свитања</string>
   <string name="live_display_off">Искључено</string>
@@ -141,9 +140,6 @@
   <string name="live_display_outdoor">Напољу (јако сунце)</string>
   <string name="live_display_outdoor_summary">Користи само подешавања за напоље</string>
   <string name="live_display_hint">LiveDisplay може смањити напрезање очију и помоћи да спавате ноћу. Додирните да пробате!</string>
-=======
-  <!-- Template for showing cellular network operator name while LTE calling is enabled -->
->>>>>>> 4a54c55... livedisplay: Moving LiveDisplay to CMSDK
   <string name="tethered_notification_no_device_message">Нема повезаног уређаја</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> конектован уређај</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> конектовани уређаји</string>
