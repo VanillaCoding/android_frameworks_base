@@ -481,9 +481,15 @@ public class PhoneStatusBarPolicy implements Callback {
                 @Override
                 public void onUserSwitching(int newUserId, IRemoteCallback reply) {
                     mUserInfoController.reloadUserInfo();
-                }
-
-                @Override
+                        if (reply != null) {
+                        try {
+                            reply.sendResult(null);
+                        } catch (RemoteException e) {
+                        }
+                    }
+                 }
+ 
+                 @Override
                 public void onUserSwitchComplete(int newUserId) throws RemoteException {
                     updateAlarm();
                     profileChanged(newUserId);
