@@ -39,7 +39,6 @@ public class WeatherControllerImpl implements WeatherController {
     private static final boolean DEBUG = Log.isLoggable(TAG, Log.DEBUG);
     private WeatherContentObserver mWeatherContentObserver;
     private Handler mHandler;
-    private boolean mIsContentObserverRegistered;
 
     public static final ComponentName COMPONENT_WEATHER_FORECAST = new ComponentName(
             "com.cyanogenmod.lockclock", "com.cyanogenmod.lockclock.weather.ForecastActivity");
@@ -60,9 +59,12 @@ public class WeatherControllerImpl implements WeatherController {
     public WeatherControllerImpl(Context context) {
         mContext = context;
                 mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
-        queryWeather();
         mHandler = new Handler();
         mWeatherContentObserver = new WeatherContentObserver(mHandler);
+        mContext.getContentResolver().registerContentObserver(
+                WeatherContract.WeatherColumns.CURRENT_WEATHER_URI,
+                true, mWeatherContentObserver);
+        queryWeather();
     }
 
     public void addCallback(Callback callback) {
@@ -70,23 +72,12 @@ public class WeatherControllerImpl implements WeatherController {
         if (DEBUG) Log.d(TAG, "addCallback " + callback);
         mCallbacks.add(callback);
         callback.onWeatherChanged(mCachedInfo); // immediately update with current values
-        //Register the content observer if we have at least one registered callback
-        if (!mIsContentObserverRegistered) {
-            mContext.getContentResolver().registerContentObserver(
-                    WeatherContract.WeatherColumns.CURRENT_WEATHER_URI,
-                        true, mWeatherContentObserver);
-            mIsContentObserverRegistered = true;
-        }
     }
 
     public void removeCallback(Callback callback) {
         if (callback == null) return;
         if (DEBUG) Log.d(TAG, "removeCallback " + callback);
         mCallbacks.remove(callback);
-        if (mCallbacks.size() == 0 && mIsContentObserverRegistered) {
-            mContext.getContentResolver().unregisterContentObserver(mWeatherContentObserver);
-            mIsContentObserverRegistered = false;
-        }
     }
 
     @Override
@@ -106,7 +97,7 @@ public class WeatherControllerImpl implements WeatherController {
         } else {
             try {
                 c.moveToFirst();
-                mCachedInfo.temp = WeatherUtils.formatTemperature(c.getFloat(0), c.getInt(1));
+                mCachedInfo.temp = WeatherUtils.formatTemperature(c.getDouble(0), c.getInt(1));
                 mCachedInfo.city = c.getString(2);
                 mCachedInfo.condition = c.getString(3);
             } finally {
@@ -130,6 +121,7 @@ public class WeatherControllerImpl implements WeatherController {
         @Override
         public void onChange(boolean selfChange) {
             super.onChange(selfChange);
+            if (DEBUG) Log.d(TAG, "Received onChange notification");
             queryWeather();
             fireCallback();
         }
