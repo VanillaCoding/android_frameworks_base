@@ -1088,8 +1088,8 @@ public class KeyguardUpdateMonitor implements TrustManager.TrustListener {
     }
 
     private boolean isDeviceProvisionedInSettingsDb() {
-        return Settings.Global.getInt(mContext.getContentResolver(),
-                Settings.Global.DEVICE_PROVISIONED, 0) != 0;
+        return Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.DEVICE_PROVISIONED, 0) != 0;
     }
 
     private void watchForDeviceProvisioning() {
@@ -1106,7 +1106,7 @@ public class KeyguardUpdateMonitor implements TrustManager.TrustListener {
         };
 
         mContext.getContentResolver().registerContentObserver(
-                Settings.Global.getUriFor(Settings.Global.DEVICE_PROVISIONED),
+                Settings.Global.getUriFor(Settings.Secure.DEVICE_PROVISIONED),
                 false, mDeviceProvisionedObserver);
 
         // prevent a race condition between where we check the flag and where we register the
