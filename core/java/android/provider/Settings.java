@@ -3730,6 +3730,13 @@ public final class Settings {
          * @hide
          */
 	public static final String NAVIGATION_BAR_WIDTH = "navigation_bar_width";
+	
+	 /**
+         * for lockscreen mods
+         *
+         * @hide
+         */
+        public static final String POWER_MENU_LOCKSCREEN = "power_menu_lockscreen";
 
         /**
          * whether to enable torch on lockscreen
