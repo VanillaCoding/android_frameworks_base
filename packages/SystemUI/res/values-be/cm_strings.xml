@@ -136,18 +136,4 @@
   <string name="accessibility_quick_settings_location_changed_high_accuracy">Служба адпраўкі месцазнаходжання пераключана ў рэжым высокай дакладнасці.</string>
   <string name="quick_settings_tiles_category_system">Сістэмны пліткі</string>
   <string name="quick_settings_tiles_add_tiles">Дадаць плітку</string>
-<<<<<<< HEAD
-=======
-  <!-- Hotspot dialog message -->
-  <!-- Notification which notifies user flashlight is enabled -->
-  <!-- Wi-Fi hotspot label when enabled -->
-  <!-- CellularTile data sim not configured state string -->
-  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
-  <string name="accessibility_dock_battery_level">Зарад батарэі док-станцыі <xliff:g id="number">%d</xliff:g> адсоткаў.</string>
-  <!-- Play queue -->
-  <string name="play_queue_extention">Паказаць чаргу прайгравання</string>
-  <!-- Path data for portrait battery -->
-  <!-- Path data for landscape battery -->
-  <!-- Path data for circle battery -->
->>>>>>> 20cb552... Automatic translation import
 </resources>

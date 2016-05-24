@@ -52,20 +52,4 @@
   <string name="quick_settings_location_battery_saving_label">Battery-saving</string>
   <string name="quick_settings_location_gps_only_label">Device only</string>
   <string name="quick_settings_location_high_accuracy_label">High accuracy</string>
-<<<<<<< HEAD
-=======
-  <!-- Announcement made when the location tile changes to battery saving (not shown on the screen). [CHAR LIMIT=NONE] -->
-  <!-- Announcement made when the location tile changes to sensors only (not shown on the screen). [CHAR LIMIT=NONE] -->
-  <!-- Announcement made when the location tile changes to high accuracy (not shown on the screen). [CHAR LIMIT=NONE] -->
-  <!-- detail header when adding a tile -->
-  <!-- Hotspot dialog message -->
-  <!-- Notification which notifies user flashlight is enabled -->
-  <!-- Wi-Fi hotspot label when enabled -->
-  <!-- CellularTile data sim not configured state string -->
-  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
-  <!-- Play queue -->
-  <!-- Path data for portrait battery -->
-  <!-- Path data for landscape battery -->
-  <!-- Path data for circle battery -->
->>>>>>> 20cb552... Automatic translation import
 </resources>

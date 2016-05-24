@@ -116,28 +116,4 @@
   <string name="accessibility_quick_settings_location_changed_battery_saving">Báo cáo vị trí đã đổi sang chế độ tiết kiệm pin.</string>
   <string name="accessibility_quick_settings_location_changed_gps_only">Báo cáo vị trí đã đổi sang chế độ chỉ cảm biến.</string>
   <string name="accessibility_quick_settings_location_changed_high_accuracy">Báo cáo vị trí đã đổi sang chế độ chính xác cao.</string>
-<<<<<<< HEAD
-=======
-  <string name="quick_settings_tiles_category_system">Ô hệ thống</string>
-  <!-- detail header when adding a tile -->
-  <string name="quick_settings_tiles_add_tiles">Thêm một ô</string>
-  <!-- Hotspot dialog message -->
-  <string name="hotspot_apm_message">Không thể kết nối với mạng di động khi đã kích hoạt chế độ trên Máy bay. Vô hiệu chế độ trên Máy bay và thử lại.</string>
-  <!-- Notification which notifies user flashlight is enabled -->
-  <string name="quick_settings_tile_flashlight_not_title">Đã bật đèn pin</string>
-  <string name="quick_settings_tile_flashlight_not_summary">Chạm vào để tắt</string>
-  <!-- Wi-Fi hotspot label when enabled -->
-  <plurals name="wifi_hotspot_connected_clients_label">
-    <item quantity="other">%1$d máy khách</item>
-  </plurals>
-  <!-- CellularTile data sim not configured state string -->
-  <string name="data_sim_not_configured">Không có SIM dữ liệu</string>
-  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
-  <string name="accessibility_dock_battery_level">Thanh pin <xliff:g id="number">%d</xliff:g> phần trăm.</string>
-  <!-- Play queue -->
-  <string name="play_queue_extention">Hiện danh sách chờ phát</string>
-  <!-- Path data for portrait battery -->
-  <!-- Path data for landscape battery -->
-  <!-- Path data for circle battery -->
->>>>>>> 20cb552... Automatic translation import
 </resources>

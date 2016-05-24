@@ -104,17 +104,4 @@
   <string name="accessibility_quick_settings_location_changed_battery_saving">Lokalizado ŝanĝita al ŝparado de baterio.</string>
   <string name="accessibility_quick_settings_location_changed_gps_only">Lokalizado ŝanĝita al reĝimo de nur aparato.</string>
   <string name="accessibility_quick_settings_location_changed_high_accuracy">Lokalizado ŝanĝita al reĝimo de alta precizeco.</string>
-<<<<<<< HEAD
-=======
-  <!-- detail header when adding a tile -->
-  <!-- Hotspot dialog message -->
-  <!-- Notification which notifies user flashlight is enabled -->
-  <!-- Wi-Fi hotspot label when enabled -->
-  <!-- CellularTile data sim not configured state string -->
-  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
-  <!-- Play queue -->
-  <!-- Path data for portrait battery -->
-  <!-- Path data for landscape battery -->
-  <!-- Path data for circle battery -->
->>>>>>> 20cb552... Automatic translation import
 </resources>

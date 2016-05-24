@@ -117,25 +117,4 @@
   <string name="accessibility_quick_settings_location_changed_battery_saving">تغيير تحديد الموقع إلى وضع توفير البطارية.</string>
   <string name="accessibility_quick_settings_location_changed_gps_only">تغيير تحديد الموقع إلى وضع المستشعرات فقط.</string>
   <string name="accessibility_quick_settings_location_changed_high_accuracy">تغيير تحديد الموقع إلى وضع الدقة العالية.</string>
-<<<<<<< HEAD
-=======
-  <string name="quick_settings_tiles_category_system">إختصارات النظام</string>
-  <!-- detail header when adding a tile -->
-  <string name="quick_settings_tiles_add_tiles">إضافة إختصار</string>
-  <!-- Hotspot dialog message -->
-  <string name="hotspot_apm_message">غير قادر على الإتصال بالشبكات عند تفعيل وضع الطيران. قم بإلغاء تفعيل وضع الطيران وحاول مرة أخرى.</string>
-  <!-- Notification which notifies user flashlight is enabled -->
-  <string name="quick_settings_tile_flashlight_not_title">ضوء الفلاش مشغل</string>
-  <string name="quick_settings_tile_flashlight_not_summary">المس لإيقاف التشغيل</string>
-  <!-- Wi-Fi hotspot label when enabled -->
-  <!-- CellularTile data sim not configured state string -->
-  <string name="data_sim_not_configured">لا توجد SIM للبيانات</string>
-  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
-  <string name="accessibility_dock_battery_level">بطارية الإرساء <xliff:g id="number">%d</xliff:g>في المائة.</string>
-  <!-- Play queue -->
-  <string name="play_queue_extention">إظهار قائمة انتظار التشغيل</string>
-  <!-- Path data for portrait battery -->
-  <!-- Path data for landscape battery -->
-  <!-- Path data for circle battery -->
->>>>>>> 20cb552... Automatic translation import
 </resources>

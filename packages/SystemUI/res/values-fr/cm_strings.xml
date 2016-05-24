@@ -135,26 +135,4 @@
   <string name="accessibility_quick_settings_location_changed_high_accuracy">Localisation changée en mode haute précision.</string>
   <string name="quick_settings_tiles_category_system">Raccourcis système</string>
   <string name="quick_settings_tiles_add_tiles">Ajouter un raccourci</string>
-<<<<<<< HEAD
-=======
-  <!-- Hotspot dialog message -->
-  <string name="hotspot_apm_message">Impossible de se connecter aux réseaux mobiles quand le mode avion est activé. Désactivez le mode avion et réessayez.</string>
-  <!-- Notification which notifies user flashlight is enabled -->
-  <string name="quick_settings_tile_flashlight_not_title">Lampe de poche allumée</string>
-  <string name="quick_settings_tile_flashlight_not_summary">Toucher pour éteindre</string>
-  <!-- Wi-Fi hotspot label when enabled -->
-  <plurals name="wifi_hotspot_connected_clients_label">
-    <item quantity="one">%1$d client</item>
-    <item quantity="other">%1$d clients</item>
-  </plurals>
-  <!-- CellularTile data sim not configured state string -->
-  <string name="data_sim_not_configured">Aucune donnée SIM</string>
-  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
-  <string name="accessibility_dock_battery_level">Batterie de la station d\'accueil chargée à <xliff:g id="number">%d</xliff:g> pour cent.</string>
-  <!-- Play queue -->
-  <string name="play_queue_extention">Voir la file d\'attente de lecture</string>
-  <!-- Path data for portrait battery -->
-  <!-- Path data for landscape battery -->
-  <!-- Path data for circle battery -->
->>>>>>> 20cb552... Automatic translation import
 </resources>

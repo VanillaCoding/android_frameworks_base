@@ -143,21 +143,4 @@
   <string name="hotspot_apm_message">Δεν είναι δυνατή η σύνδεση με δίκτυα κινητής τηλεφωνίας ενώ είναι ενεργοποιημένη η λειτουργία πτήσης. Απενεργοποιήστε τη λειτουργία πτήσης και προσπαθήστε ξανά.</string>
   <string name="quick_settings_tile_flashlight_not_title">Ο φακός είναι ενεργοποιημένος</string>
   <string name="quick_settings_tile_flashlight_not_summary">Πιέστε για απενεργοποίηση</string>
-<<<<<<< HEAD
-=======
-  <!-- Wi-Fi hotspot label when enabled -->
-  <plurals name="wifi_hotspot_connected_clients_label">
-    <item quantity="one">%1$d συνδεδεμένος</item>
-    <item quantity="other">%1$d συνδεδεμένοι</item>
-  </plurals>
-  <!-- CellularTile data sim not configured state string -->
-  <string name="data_sim_not_configured">Δεν υπάρχει SIM δεδομένων</string>
-  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
-  <string name="accessibility_dock_battery_level">Μπαταρία βάσης σύνδεσης <xliff:g id="number">%d</xliff:g> τοις εκατό.</string>
-  <!-- Play queue -->
-  <string name="play_queue_extention">Εμφάνιση ουράς αναπαραγωγής</string>
-  <!-- Path data for portrait battery -->
-  <!-- Path data for landscape battery -->
-  <!-- Path data for circle battery -->
->>>>>>> 20cb552... Automatic translation import
 </resources>

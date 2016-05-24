@@ -139,20 +139,4 @@
   <string name="hotspot_apm_message">비행기 모드가 활성화되어 있어 셀룰러 네트워크에 연결할 수 없습니다. 비행기 모드를 해제하고 다시 시도하세요.</string>
   <string name="quick_settings_tile_flashlight_not_title">손전등 켜짐</string>
   <string name="quick_settings_tile_flashlight_not_summary">탭하여 끄기</string>
-<<<<<<< HEAD
-=======
-  <!-- Wi-Fi hotspot label when enabled -->
-  <plurals name="wifi_hotspot_connected_clients_label">
-    <item quantity="other">%1$d개 장치</item>
-  </plurals>
-  <!-- CellularTile data sim not configured state string -->
-  <string name="data_sim_not_configured">데이터 SIM 없음</string>
-  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
-  <string name="accessibility_dock_battery_level">독의 배터리는 <xliff:g id="number">%d</xliff:g>퍼센트입니다.</string>
-  <!-- Play queue -->
-  <string name="play_queue_extention">재생 대기열 표시</string>
-  <!-- Path data for portrait battery -->
-  <!-- Path data for landscape battery -->
-  <!-- Path data for circle battery -->
->>>>>>> 20cb552... Automatic translation import
 </resources>

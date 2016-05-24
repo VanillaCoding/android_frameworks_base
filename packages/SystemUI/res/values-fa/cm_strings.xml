@@ -116,19 +116,4 @@
   <string name="accessibility_quick_settings_location_changed_battery_saving">گزارش مکان به حالت صرفه‌جویی در باتری تغییر یافت.</string>
   <string name="accessibility_quick_settings_location_changed_gps_only">گزارش مکان به حالت فقط حسگرها تغییر یافت.</string>
   <string name="accessibility_quick_settings_location_changed_high_accuracy">گزارش مکان به حالت دقت بالا تغییر یافت.</string>
-<<<<<<< HEAD
-=======
-  <!-- detail header when adding a tile -->
-  <!-- Hotspot dialog message -->
-  <!-- Notification which notifies user flashlight is enabled -->
-  <!-- Wi-Fi hotspot label when enabled -->
-  <!-- CellularTile data sim not configured state string -->
-  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
-  <string name="accessibility_dock_battery_level">باتری داک <xliff:g id="number">%d</xliff:g> درصد.</string>
-  <!-- Play queue -->
-  <string name="play_queue_extention">نمایش صف پخش</string>
-  <!-- Path data for portrait battery -->
-  <!-- Path data for landscape battery -->
-  <!-- Path data for circle battery -->
->>>>>>> 20cb552... Automatic translation import
 </resources>

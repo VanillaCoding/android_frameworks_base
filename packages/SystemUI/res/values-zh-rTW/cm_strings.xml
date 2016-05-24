@@ -94,16 +94,4 @@
   <string name="quick_settings_location_high_accuracy_label">高精確度</string>
   <string name="quick_settings_tiles_category_system">系統瓷磚</string>
   <string name="quick_settings_tiles_add_tiles">新增瓷磚</string>
-<<<<<<< HEAD
-=======
-  <!-- Hotspot dialog message -->
-  <!-- Notification which notifies user flashlight is enabled -->
-  <!-- Wi-Fi hotspot label when enabled -->
-  <!-- CellularTile data sim not configured state string -->
-  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
-  <!-- Play queue -->
-  <!-- Path data for portrait battery -->
-  <!-- Path data for landscape battery -->
-  <!-- Path data for circle battery -->
->>>>>>> 20cb552... Automatic translation import
 </resources>

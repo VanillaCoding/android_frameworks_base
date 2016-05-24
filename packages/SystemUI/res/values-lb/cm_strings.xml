@@ -135,18 +135,4 @@
   <string name="accessibility_quick_settings_location_changed_high_accuracy">Standuertbericht op \"Héich Genauegkeet\" geännert.</string>
   <string name="quick_settings_tiles_category_system">System-Kachelen</string>
   <string name="quick_settings_tiles_add_tiles">Kachelen dobäisetzen</string>
-<<<<<<< HEAD
-=======
-  <!-- Hotspot dialog message -->
-  <!-- Notification which notifies user flashlight is enabled -->
-  <!-- Wi-Fi hotspot label when enabled -->
-  <!-- CellularTile data sim not configured state string -->
-  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
-  <string name="accessibility_dock_battery_level">Dockakku <xliff:g id="number">%d</xliff:g> Prozent.</string>
-  <!-- Play queue -->
-  <string name="play_queue_extention">Waardeschlaang uweisen</string>
-  <!-- Path data for portrait battery -->
-  <!-- Path data for landscape battery -->
-  <!-- Path data for circle battery -->
->>>>>>> 20cb552... Automatic translation import
 </resources>

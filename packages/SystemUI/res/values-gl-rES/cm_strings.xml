@@ -136,16 +136,4 @@
   <string name="hotspot_apm_message">Non é posíbel conectar a rede móbil mentres o modo Avión está activado. Desactívao e téntao de novo.</string>
   <string name="quick_settings_tile_flashlight_not_title">A lanterna está acesa</string>
   <string name="quick_settings_tile_flashlight_not_summary">Toca para apagala</string>
-<<<<<<< HEAD
-=======
-  <!-- Wi-Fi hotspot label when enabled -->
-  <!-- CellularTile data sim not configured state string -->
-  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
-  <string name="accessibility_dock_battery_level">Batería do conector <xliff:g id="number">%d</xliff:g> %.</string>
-  <!-- Play queue -->
-  <string name="play_queue_extention">Amosar a cola de reproducción</string>
-  <!-- Path data for portrait battery -->
-  <!-- Path data for landscape battery -->
-  <!-- Path data for circle battery -->
->>>>>>> 20cb552... Automatic translation import
 </resources>
