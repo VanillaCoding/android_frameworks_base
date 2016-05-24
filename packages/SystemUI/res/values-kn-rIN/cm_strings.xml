@@ -116,4 +116,28 @@
   <string name="accessibility_quick_settings_location_changed_battery_saving">ಸ್ಥಳ ವರದಿಸಲ್ಲಿಸುವಿಕೆ ಬ್ಯಾಟರಿ ಉಳಿತಾಯ ಮೋಡ್‍ಗೆ ಬದಲಾಗಿದೆ.</string>
   <string name="accessibility_quick_settings_location_changed_gps_only">ಸ್ಥಳ ವರದಿಸಲ್ಲಿಸುವಿಕೆ ಸಂವೇದಕಗಳು ಮಾತ್ರ ಮೋಡ್‍ಗೆ ಬದಲಾಗಿದೆ.</string>
   <string name="accessibility_quick_settings_location_changed_high_accuracy">ಸ್ಥಳ ವರದಿಸಲ್ಲಿಸುವಿಕೆ ಗರಿಷ್ಠ ನಿಖರತೆ ಮೋಡ್‍ಗೆ ಬದಲಾಗಿದೆ.</string>
+<<<<<<< HEAD
+=======
+  <string name="quick_settings_tiles_category_system">ಸಿಸ್ಟಂ ಟೈಲ್‌ಗಳು</string>
+  <!-- detail header when adding a tile -->
+  <string name="quick_settings_tiles_add_tiles">ಟೈಲ್‌ ಸೇರಿಸಿ</string>
+  <!-- Hotspot dialog message -->
+  <string name="hotspot_apm_message">ಏರ್‌ಪ್ಲೇನ್‌ ಮೋಡ್‌ ಸಕ್ರಿಯವಾಗಿರುವ ವೇಳೆ ಮೊಬೈಲ್‌ ನೆಟ್‌ವರ್ಕ್‌ಗಳಿಗೆ ಸಂಪರ್ಕಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ. ಏರ್‌ಪ್ಲೇನ್‌ ಮೋಡ್‌ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+  <!-- Notification which notifies user flashlight is enabled -->
+  <string name="quick_settings_tile_flashlight_not_title">ಫ್ಲ್ಯಾಶ್ಲೈಟ್ ಆನ್ ಆಗಿದೆ</string>
+  <string name="quick_settings_tile_flashlight_not_summary">ಆಫ್ ಮಾಡಲು ಸ್ಪರ್ಶಿಸಿ</string>
+  <!-- Wi-Fi hotspot label when enabled -->
+  <plurals name="wifi_hotspot_connected_clients_label">
+    <item quantity="one">%1$d ಕ್ಲೈಂಟ್</item>
+    <item quantity="other">%1$d ಕ್ಲೈಂಟ್</item>
+  </plurals>
+  <!-- CellularTile data sim not configured state string -->
+  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_dock_battery_level">ಡಾಕ್ ಬ್ಯಾಟರಿ <xliff:g id="number">%d</xliff:g> ಶೇಕಡಾ.</string>
+  <!-- Play queue -->
+  <string name="play_queue_extention">ಪ್ಲೇ ಸರದಿಯನ್ನು ತೋರಿಸು</string>
+  <!-- Path data for portrait battery -->
+  <!-- Path data for landscape battery -->
+  <!-- Path data for circle battery -->
+>>>>>>> 20cb552... Automatic translation import
 </resources>

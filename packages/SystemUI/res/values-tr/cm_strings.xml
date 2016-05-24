@@ -133,4 +133,29 @@
   <string name="accessibility_quick_settings_location_changed_battery_saving">Konum bildirimi pil tasarruf moduna geçti.</string>
   <string name="accessibility_quick_settings_location_changed_gps_only">Konum bildirimi sadece sensörler moduna geçti.</string>
   <string name="accessibility_quick_settings_location_changed_high_accuracy">Konum bildirimi yüksek hassasiyet moduna geçti.</string>
+<<<<<<< HEAD
+=======
+  <string name="quick_settings_tiles_category_system">Sistem başlıkları</string>
+  <!-- detail header when adding a tile -->
+  <string name="quick_settings_tiles_add_tiles">Başlık ekle</string>
+  <!-- Hotspot dialog message -->
+  <string name="hotspot_apm_message">Uçak modu etkinken hücresel ağlarla bağlantı kurulamıyor. Uçak modunu devre dışı bırakın ve tekrar deneyin.</string>
+  <!-- Notification which notifies user flashlight is enabled -->
+  <string name="quick_settings_tile_flashlight_not_title">Flaş ışığı açık</string>
+  <string name="quick_settings_tile_flashlight_not_summary">Kapatmak için dokunun</string>
+  <!-- Wi-Fi hotspot label when enabled -->
+  <plurals name="wifi_hotspot_connected_clients_label">
+    <item quantity="one">%1$d istemci</item>
+    <item quantity="other">%1$d istemci</item>
+  </plurals>
+  <!-- CellularTile data sim not configured state string -->
+  <string name="data_sim_not_configured">SIM verisi yok</string>
+  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_dock_battery_level">Ünite pili yüzde <xliff:g id="number">%d</xliff:g>.</string>
+  <!-- Play queue -->
+  <string name="play_queue_extention">Oynatma kuyruğunu göster</string>
+  <!-- Path data for portrait battery -->
+  <!-- Path data for landscape battery -->
+  <!-- Path data for circle battery -->
+>>>>>>> 20cb552... Automatic translation import
 </resources>

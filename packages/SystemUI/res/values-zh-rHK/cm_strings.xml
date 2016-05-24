@@ -94,4 +94,18 @@
   <string name="accessibility_quick_settings_location_changed_battery_saving">定位報告已改為省電模式。</string>
   <string name="accessibility_quick_settings_location_changed_gps_only">定位報告已改為僅感應器模式。</string>
   <string name="accessibility_quick_settings_location_changed_high_accuracy">定位報告已改為高精度模式。</string>
+<<<<<<< HEAD
+=======
+  <!-- detail header when adding a tile -->
+  <!-- Hotspot dialog message -->
+  <!-- Notification which notifies user flashlight is enabled -->
+  <!-- Wi-Fi hotspot label when enabled -->
+  <!-- CellularTile data sim not configured state string -->
+  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_dock_battery_level">座架電池 <xliff:g id="number">%d</xliff:g>%%。</string>
+  <!-- Play queue -->
+  <!-- Path data for portrait battery -->
+  <!-- Path data for landscape battery -->
+  <!-- Path data for circle battery -->
+>>>>>>> 20cb552... Automatic translation import
 </resources>

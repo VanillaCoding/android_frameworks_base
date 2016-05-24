@@ -133,4 +133,28 @@
   <string name="accessibility_quick_settings_location_changed_battery_saving">ตำแหน่งการระบุเปลี่ยนเป็นรูปแบบประหยัดแบตเตอรี่</string>
   <string name="accessibility_quick_settings_location_changed_gps_only">การระบุตำแหน่งเปลี่ยนเป็นรูปแบบเฉพาะเซนเซอร์</string>
   <string name="accessibility_quick_settings_location_changed_high_accuracy">การระบุตำแหน่งเปลี่ยนรูปแบบเป็นความแม่นยำสูง</string>
+<<<<<<< HEAD
+=======
+  <string name="quick_settings_tiles_category_system">ไทล์ระบบ</string>
+  <!-- detail header when adding a tile -->
+  <string name="quick_settings_tiles_add_tiles">เพิ่มไทล์</string>
+  <!-- Hotspot dialog message -->
+  <string name="hotspot_apm_message">ไม่สามารถเชื่อมต่อเครือข่ายมือถือขณะใช้รูปแบบบนเครื่องบิน กรุณาปิดรูปแบบบนเครื่องบินและลองอีกครั้ง</string>
+  <!-- Notification which notifies user flashlight is enabled -->
+  <string name="quick_settings_tile_flashlight_not_title">ไฟฉายเปิดอยู่</string>
+  <string name="quick_settings_tile_flashlight_not_summary">แตะเพื่อปิด</string>
+  <!-- Wi-Fi hotspot label when enabled -->
+  <plurals name="wifi_hotspot_connected_clients_label">
+    <item quantity="other">%1$d ลูกข่าย</item>
+  </plurals>
+  <!-- CellularTile data sim not configured state string -->
+  <string name="data_sim_not_configured">ไม่มี SIM ข้อมูล</string>
+  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_dock_battery_level">แท่นชาร์จแบตเตอรี่ <xliff:g id="number">%d</xliff:g> เปอร์เซ็นต์</string>
+  <!-- Play queue -->
+  <string name="play_queue_extention">แสดงคิวเล่น</string>
+  <!-- Path data for portrait battery -->
+  <!-- Path data for landscape battery -->
+  <!-- Path data for circle battery -->
+>>>>>>> 20cb552... Automatic translation import
 </resources>

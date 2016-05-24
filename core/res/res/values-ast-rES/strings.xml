@@ -25,6 +25,15 @@
   <string name="gigabyteShort">GB</string>
   <string name="terabyteShort">TB</string>
   <string name="petabyteShort">PB</string>
+<<<<<<< HEAD
+=======
+  <!-- Format string used to add a suffix like "KB" or "MB" to a number
+         to display a size in kilobytes, megabytes, or other size units.
+         Some languages (like French) will want to add a space between
+         the placeholders. -->
+  <string name="fileSizeSuffix"><xliff:g id="number" example="123">%1$s</xliff:g><xliff:g id="unit" example="KB">%2$s</xliff:g></string>
+  <!-- [CHAR_LIMIT=10] Suffix added to signify duration in days -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="durationDays"><xliff:g id="days">%1$d</xliff:g> díes</string>
   <string name="durationDayHours"><xliff:g id="days">%1$d</xliff:g> día
             <xliff:g id="hours">%2$d</xliff:g> hrs</string>
@@ -117,6 +126,35 @@
   <string name="roamingText11">Banner d\'itinerancia activáu</string>
   <string name="roamingText12">Banner d\'itinerancia desactiváu</string>
   <string name="roamingTextSearching">Guetando serviciu</string>
+<<<<<<< HEAD
+=======
+  <!-- Displayed when WFC registration fails -->
+  <string name="wfcRegErrorTitle">Llamaes Wifi</string>
+  <!-- WFC Operator Error Codes -->
+  <!-- WFC Operator Error Messages showed as alerts -->
+  <!-- WFC Operator Error Messages showed as notifications -->
+  <!-- Template for showing cellular network operator name while WFC is active -->
+  <string name="wfcSpnFormat">%s</string>
+  <!-- Template for showing operator name for data connection while WFC is active -->
+  <string name="wfcDataSpnFormat">%s</string>
+  <!-- WFC, summary for Disabled -->
+  <string name="wifi_calling_off_summary">Non</string>
+  <!-- WFC, summary for Wi-Fi Preferred -->
+  <string name="wfc_mode_wifi_preferred_summary">Rede Wi-Fi preferida</string>
+  <!-- WFC, summary for Cellular Preferred -->
+  <string name="wfc_mode_cellular_preferred_summary">Rede móvil preferida</string>
+  <!-- WFC, summary for Wi-Fi Only -->
+  <string name="wfc_mode_wifi_only_summary">Namái Wi-Fi</string>
+  <!--
+        {0} is one of "bearerServiceCode*"
+        {1} is dialing number
+        {2} is time in seconds
+
+        cfTemplateRegistered and cfTemplateRegisteredTime mean that a phone number
+        has been set but forwarding is not on.
+    -->
+  <!-- Displayed when the call forwarding query was not able to be forwarded. -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="cfTemplateNotForwarded"><xliff:g id="BEARER_SERVICE_CODE">{0}</xliff:g>: Non esviada</string>
   <string name="cfTemplateForwarded"><xliff:g id="BEARER_SERVICE_CODE">{0}</xliff:g>: <xliff:g id="DIALING_NUMBER">{1}</xliff:g></string>
   <string name="cfTemplateForwardedTime"><xliff:g id="BEARER_SERVICE_CODE">{0}</xliff:g>: <xliff:g id="DIALING_NUMBER">{1}</xliff:g> trescurríos <xliff:g id="TIME_DELAY">{2}</xliff:g> segundos</string>
@@ -150,6 +188,25 @@
   <string name="ssl_ca_cert_warning">Ye dable que la rede tea supervisada</string>
   <string name="ssl_ca_cert_noti_by_unknown">Por un terceru desconocíu</string>
   <string name="ssl_ca_cert_noti_managed">Por <xliff:g id="MANAGING_DOMAIN">%s</xliff:g></string>
+<<<<<<< HEAD
+=======
+  <!-- Work profile deleted notification-->
+  <!-- Shows up in the notification's title when the system deletes the work profile. [CHAR LIMIT=NONE] -->
+  <!-- Content text for a notification. The Title of the notification is "work_profile_deleted",
+         i.e. "Work profile deleted". This says that the profile is deleted by the system as a result of
+         the current profile owner gone missing. [CHAR LIMIT=100]-->
+  <!-- Content text for an expanded notification. The Title of the notification is "work_profile_deleted",
+         i.e. "Work profile deleted". This further explains that the profile is deleted by the system
+         as a result of the current profile admin gone missing. [CHAR LIMIT=NONE]-->
+  <!-- Content text for a notification. The Title of the notification is "work_profile_deleted",
+        This indicates that a work profile has been deleted. [CHAR LIMIT=NONE]-->
+  <string name="work_profile_deleted_description_dpm_wipe">El to perfil de trabayu yá nun ta disponible nesti preséu.</string>
+  <!-- Factory reset warning dialog strings-->
+  <!-- Shows up in the dialog's title to warn about an impeding factory reset. [CHAR LIMIT=NONE] -->
+  <!-- Text message in the factory reset warning dialog. This says that the the device admin app
+         is missing or corrupted. As a result the device will be erased. [CHAR LIMIT=NONE]-->
+  <!-- Display name for any time a piece of data refers to the owner of the phone. For example, this could be used in place of the phone's phone number. -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="me">Yo</string>
   <string name="power_dialog" product="tablet">Opciones de la tablet</string>
   <string name="power_dialog" product="default">Opciones del teléfonu</string>
@@ -161,6 +218,18 @@
   <string name="silent_mode_silent">Timbre desactiváu</string>
   <string name="silent_mode_vibrate">Mou vibración</string>
   <string name="silent_mode_ring">Timbre activáu</string>
+<<<<<<< HEAD
+=======
+  <!-- Reboot to Recovery Progress Dialog. This is shown before it reboots to recovery. -->
+  <string name="reboot_to_update_title">Anovamientu del sistema Android</string>
+  <string name="reboot_to_update_prepare">Preparando l\'anovamientu\u2026</string>
+  <string name="reboot_to_update_package">Procesando\'l paquete d\'anovamientu\u2026</string>
+  <string name="reboot_to_update_reboot">Reaniciando\u2026</string>
+  <!-- Reboot to Recovery for factory reset. -->
+  <string name="reboot_to_reset_title">Reafitar a axustes de fábrica</string>
+  <string name="reboot_to_reset_message">Reiniciando\u2026</string>
+  <!-- Shutdown Progress Dialog. This is shown if the user chooses to power off the phone. -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="shutdown_progress">Apagando\u2026</string>
   <string name="shutdown_confirm" product="tablet">La tablet va apagase.</string>
   <string name="shutdown_confirm" product="watch">El reló va apagase</string>
@@ -184,18 +253,68 @@
   <string name="global_actions_airplane_mode_on_status">Mou avión activáu</string>
   <string name="global_actions_airplane_mode_off_status">Mou avión desactiváu</string>
   <string name="global_action_settings">Axustes</string>
+<<<<<<< HEAD
+=======
+  <!-- label for item that launches assist in phone options dialog [CHAR LIMIT=15]-->
+  <string name="global_action_assist">Asistencia</string>
+  <!-- label for item that launches voice assist in phone options dialog [CHAR LIMIT=15]-->
+  <string name="global_action_voice_assist">Asistente voz</string>
+  <!-- label for item that locks the phone and enforces that it can't be unlocked without entering a credential. [CHAR LIMIT=15] -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="global_action_lockdown">Bloquiar agora</string>
   <string name="status_bar_notification_info_overflow">999+</string>
   <string name="safeMode">Mou seguru</string>
   <string name="android_system_label">Sistema Android</string>
+<<<<<<< HEAD
   <string name="managed_profile_label">Trabayu</string>
   <string name="permgrouplab_calendar">Calendariu</string>
   <string name="permgrouplab_sms">SMS</string>
   <string name="permgrouplab_storage">Almacenamientu</string>
+=======
+  <!-- Label for the user owner in the intent forwarding app. [CHAR LIMIT=15] -->
+  <string name="user_owner_label">Personal</string>
+  <!-- Label for a corporate profile in the intent forwarding app. [CHAR LIMIT=15] -->
+  <string name="managed_profile_label">Trabayu</string>
+  <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permgrouplab_contacts">Contautos</string>
+  <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permgroupdesc_contacts">acceder a los contautos</string>
+  <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permgrouplab_location">Llocalización</string>
+  <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permgroupdesc_location">accesu a la llocalización d\'esti preséu</string>
+  <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permgrouplab_calendar">Calendariu</string>
+  <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permgroupdesc_calendar">acceder al calendariu</string>
+  <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permgrouplab_sms">SMS</string>
+  <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permgroupdesc_sms">unviar y ver mensaxes SMS</string>
+  <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permgrouplab_storage">Almacenamientu</string>
+  <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permgroupdesc_storage">acceder a les semeyes, conteníu multimedia y los ficheros del preséu</string>
+  <!-- Title of a category of application permissioncds, listed so the user can choose whether they want to allow the application to do this. -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="permgrouplab_microphone">Micrófonu</string>
   <string name="permgroupdesc_microphone">grabar soníu</string>
   <string name="permgrouplab_camera">Cámara</string>
+<<<<<<< HEAD
   <string name="permgrouplab_phone">Teléfonu</string>
+=======
+  <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permgroupdesc_camera">facer semeyes y grabar vídeos</string>
+  <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permgrouplab_phone">Teléfonu</string>
+  <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permgroupdesc_phone">facer y xestionar llamaes telefóniques</string>
+  <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permgrouplab_sensors">Sensores corporales</string>
+  <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permgroupdesc_sensors">acceder a los datos del sensor tocante a los tos signos vitales</string>
+  <!-- Title for the capability of an accessibility service to retrieve window content. -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="capability_title_canRetrieveWindowContent">Recuperar el conteníu de la ventana</string>
   <string name="capability_desc_canRetrieveWindowContent">Inspeiciona\'l conteníu de la ventana cola que teas interactuando.</string>
   <string name="capability_title_canRequestTouchExploration">Activar esploración táctil</string>
@@ -221,8 +340,24 @@
   <string name="permlab_receiveMms">recibir mensaxes de testu (MMS)</string>
   <string name="permdesc_receiveMms">Permite que l\'aplicación reciba y procese mensaxes MMS, lo que significa que podría usar esti permisu pa remanar o desaniciar mensaxes unviaos al preséu ensin amosá-ylos al usuariu.</string>
   <string name="permlab_readCellBroadcasts">lleer mensaxes de difusión móvil</string>
+<<<<<<< HEAD
+=======
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readCellBroadcasts">Permite a l\'app lleer
+        los mensaxes de difusión móvil que recibe\'l preséu. En dalgunas llocalizaciones,
+        les alertes de difusión móvil únviense pa informar situaciones d\'emerxencia.
+        Les aplicaciones malicioses puen afeutar el rindimientu o funcionamientu del
+        preséu cuando se recibe un mensaxe de difusión móvil d\'emerxencia.</string>
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="permlab_subscribedFeedsRead">lleer feeds a los que ta soscritu l\'usuariu</string>
   <string name="permdesc_subscribedFeedsRead">Permite que l\'aplicación obtenga detalles sobre los feeds sincronizaos anguaño.</string>
+<<<<<<< HEAD
+=======
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_sendSms">unviar y ver mensaxes SMS</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="permdesc_sendSms">Permite que l\'aplicación unvie mensaxes SMS, lo que pue xenerar cargos inesperaos. Les aplicaciones malintencionaes puen causate gastos imprevistos al unviar mensaxes ensin la to confirmación.</string>
   <string name="permlab_readSms">lleer los tos mensaxes de testu (SMS o MMS)</string>
   <string name="permdesc_readSms" product="tablet">Permite que l\'aplicación llea mensaxes SMS almacenaos na tablet o na tarxeta SIM. L\'aplicación pue usar esti permisu pa lleer tolos mensaxes SMS, independientemente de cuál seya\'l so conteníu o\'l so nivel de confidencialidá.</string>
@@ -231,6 +366,14 @@
   <string name="permdesc_receiveWapPush">Permite que l\'aplicación reciba y procese mensaxes WAP, lo que significa que podría usar esti permisu pa remanar o desaniciar mensaxes unviaos al usuariu ensin amosá-ylos.</string>
   <string name="permlab_getTasks">recuperar aplicaciones n\'execución</string>
   <string name="permdesc_getTasks">Permite que l\'aplicación recupere información sobre xeres que se tán executando nesi momentu o que s\'executaren de recién. L\'aplicación pue usar esti permisu pa descubrir cuáles son les aplicaciones que s\'usen nel preséu.</string>
+<<<<<<< HEAD
+=======
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to set the profile/device owners.
+     [CHAR LIMIT=NONE] -->
+  <string name="permdesc_manageProfileAndDeviceOwners">Permite que les apps configuren los perfiles de propietarios y el propietariu del preséu.</string>
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="permlab_reorderTasks">reorganizar aplicaciones n\'execución</string>
   <string name="permdesc_reorderTasks">Permite que l\'aplicación mueva xeres a segundu o a primer planu. L\'aplicación pue usar esti permisu pa facer estos movimientos ensin que-y lo indique l\'usuariu.</string>
   <string name="permlab_enableCarMode">habilitar mou coche</string>
@@ -288,6 +431,13 @@
   <string name="permdesc_flashlight">Permite que l\'aplicación remane la función de llinterna.</string>
   <string name="permlab_callPhone">llamar direutamente a númberos de teléfonu</string>
   <string name="permdesc_callPhone">Permite que l\'aplicación faiga llamaes ensin intervención del usuariu, lo que pue dar llugar a llamaes o cargos inesperaos. Les aplicaciones nun puen usar este serviciu pa facer llamaes a númberos d\'emerxencia, pero les aplicaciones malintencionaes puen causate gastos imprevistos al facer llamaes ensin la to confirmación.</string>
+<<<<<<< HEAD
+=======
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessImsCallService">acceder al serviciu IMS pa facer llamaes</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="permlab_readPhoneState">consultar la identidá y l\'estáu del teléfonu</string>
   <string name="permdesc_readPhoneState">Permite que l\'aplicación acceda a les funciones de teléfonu del preséu. L\'aplicación pue usar esti permisu pa descubrir identificadores de preseos y númberos de teléfonu, pa saber si una llamada ta activa y pa conocer el númberu remotu col que s\'afitó conexón per aciu d\'una llamada.</string>
   <string name="permlab_wakeLock" product="tablet">evitar que la tablet entre en mou de suspensión</string>
@@ -337,6 +487,30 @@
   <string name="permdesc_nfc">Permite que l\'aplicación se comunique con llectores, tarxetes y etiquetes de Comunicación de campu cercanu (NFC).</string>
   <string name="permlab_disableKeyguard">inhabilitar el bloquéu de pantalla</string>
   <string name="permdesc_disableKeyguard">Permite que l\'aplicación inhabilite\'l bloquéu del tecláu y cualquier proteición con contraseña asociada. Por exemplu, el teléfonu pue inhabilitar el bloquéu del tecláu cuando se recibe una llamada telefónica y volver a habilitalu cuando fina la llamada.</string>
+<<<<<<< HEAD
+=======
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Message shown during fingerprint acquisision when the fingerprint cannot be recognized -->
+  <!-- Message shown during fingerprint acquisision when the fingerprint cannot be recognized -->
+  <!-- Message shown during fingerprint acquisision when the fingerprint sensor needs cleaning -->
+  <!-- Message shown during fingerprint acquisision when the user removes their finger from the sensor too quickly -->
+  <!-- Message shown during fingerprint acquisision when the user moves their finger too slowly -->
+  <!-- Array containing custom messages shown during fingerprint acquisision from vendor.  Vendor is expected to add and translate these strings -->
+  <!-- Error message shown when the fingerprint hardware can't be accessed -->
+  <!-- Error message shown when the fingerprint hardware has run out of room for storing fingerprints -->
+  <!-- Error message shown when the fingerprint hardware timer has expired and the user needs to restart the operation. -->
+  <!-- Generic error message shown when the fingerprint operation (e.g. enrollment or authentication) is canceled. Generally not shown to the user-->
+  <!-- Generic error message shown when the fingerprint operation fails because too many attempts have been made. -->
+  <!-- Generic error message shown when the fingerprint hardware can't recognize the fingerprint -->
+  <string name="fingerprint_error_unable_to_process">Vuelvi intentalo.</string>
+  <!-- Template to be used to name enrolled fingerprints by default. -->
+  <!-- Array containing custom error messages from vendor.  Vendor is expected to add and translate these strings -->
+  <!-- Content description which should be used for the fingerprint icon. -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="permlab_readSyncSettings">lleer la configuración de sincronización</string>
   <string name="permdesc_readSyncSettings">Permite que l\'aplicación consulte la configuración de sincronización d\'una cuenta. L\'aplicación pue usar esti permisu, por exemplu, pa determinar si l\'aplicación Contautos ta sincronizada con una cuenta.</string>
   <string name="permlab_writeSyncSettings">activar y desactivar la sincronización</string>
@@ -385,7 +559,26 @@
   <string name="permdesc_handoverStatus">Permite qu\'esta app reciba información tocante a les tresferencies actuales d\'Android Beam</string>
   <string name="permlab_removeDrmCertificates">desaniciar certificaos DRM</string>
   <string name="permdesc_removeDrmCertificates">Permite a la app desaniciar certificaos DRM. Nun tendría de ser necesario pa les aplicaciones normales.</string>
+<<<<<<< HEAD
   <string name="policylab_limitPassword">Establecimientu de regles de contraseña</string>
+=======
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_bindCarrierServices">enllazar con servicios de fornidores</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_bindCarrierServices">Permite al propietariu enllazar con servicios de fornidores. Les aplicaciones normales nun tendríen de precisar esti permisu.</string>
+  <!-- Title of an application permission, for applications that wish to access notification policy. -->
+  <string name="permlab_access_notification_policy">Accesu a la función Nun molestar</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_access_notification_policy">Permite que l\'app llea y modifique la configuración de la función Nun molestar.</string>
+  <!-- Policy administration -->
+  <!-- Title of policy access to limiting the user's password choices -->
+  <string name="policylab_limitPassword">Establecimientu de regles de contraseña</string>
+  <!-- Description of policy access to limiting the user's password choices -->
+  <string name="policydesc_limitPassword">Permite remanar la llonxitú y los caráuteres permitíos nes contraseñes y los PIN pal bloquéu de pantalla.</string>
+  <!-- Title of policy access to watch user login attempts -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="policylab_watchLogin">Control d\'intentos de bloquéu de pantalla</string>
   <string name="policydesc_watchLogin" product="tablet">Remana\'l númberu de contraseñes incorreutes introducíes al desbloquiar la pantalla y bloquia la tablet o desanicia tolos datos si s\'inxerten munches contraseñes incorreutes.</string>
   <string name="policydesc_watchLogin" product="default">Remana\'l númberu de contraseñes incorreutes introducíes al desbloquiar la pantalla y bloquia\'l teléfonu o desanicia tolos datos si s\'inxerten munches contraseñes incorreutes.</string>
@@ -394,11 +587,41 @@
   <string name="policylab_wipeData">Desaniciar tolos datos</string>
   <string name="policydesc_wipeData" product="tablet">Desaniciar los datos de la tablet ensin avisar, reafitando los datos de fábrica</string>
   <string name="policydesc_wipeData" product="default">Desaniciar los datos del teléfonu ensin avisar, reafitando los datos de fábrica</string>
+<<<<<<< HEAD
   <string name="policylab_setGlobalProxy">Definir el sirvidor proxy global</string>
+=======
+  <!-- Title of policy access to wipe secondary user's data -->
+  <string name="policylab_wipeData_secondaryUser">Desaniciar los datos del usuariu</string>
+  <!-- Description of policy access to wipe the user's data -->
+  <string name="policydesc_wipeData_secondaryUser" product="tablet">Permite desaniciar los datos del usuariu nesta tablet ensin avisu previu.</string>
+  <!-- Description of policy access to wipe the user's data -->
+  <string name="policydesc_wipeData_secondaryUser" product="tv">Permite desaniciar los datos del usuariu nesta TV ensin avisu previu.</string>
+  <!-- Description of policy access to wipe the user's data -->
+  <string name="policydesc_wipeData_secondaryUser" product="default">Permite desaniciar los datos del usuariu nesti tfnu ensin avisu previu.</string>
+  <!-- Title of policy access to set global proxy -->
+  <string name="policylab_setGlobalProxy">Definir el sirvidor proxy global</string>
+  <!-- Description of policy access to set global proxy -->
+  <string name="policydesc_setGlobalProxy">Configura\'l proxy global de preséu que va usase
+    mentanto s\'habilita la política. Namái el propietariu del preséu pue configurar el proxy global.</string>
+  <!-- Title of policy access to enforce password expiration [CHAR LIMIT=50]-->
+  <string name="policylab_expirePassword">Config. vencimientu contraseña</string>
+  <!-- Description of policy access to enforce password expiration [CHAR LIMIT=110]-->
+  <string name="policydesc_expirePassword">Permite modificar la frecuencia cola que se camuda la contraseña, el PIN o\'l patrón de bloquéu de pantalla.</string>
+  <!-- Title of policy access to require encrypted storage [CHAR LIMIT=30]-->
+>>>>>>> 20cb552... Automatic translation import
   <string name="policylab_encryptedStorage">Cifráu d\'almacenamientu</string>
   <string name="policydesc_encryptedStorage">Desixe que se cifren los datos de l\'aplicación almacenaos.</string>
   <string name="policylab_disableCamera">Inhabilitar cámares</string>
   <string name="policydesc_disableCamera">Evitar l\'usu de les cámares del preséu</string>
+<<<<<<< HEAD
+=======
+  <!-- Title of policy access to disable keyguard features [CHAR LIMIT=30]-->
+  <string name="policylab_disableKeyguardFeatures">Deshabilitar func. del bloquéu</string>
+  <!-- Description of policy access to disable keyguard features. [CHAR LIMIT=110]-->
+  <string name="policydesc_disableKeyguardFeatures">Evita l\'usu de dalgunes funciones de bloquéu de pantalla.</string>
+  <!-- The order of these is important, don't reorder without changing Contacts.java -->
+  <!-- Phone number types from android.provider.Contacts. This could be used when adding a new phone number for a contact, for example. -->
+>>>>>>> 20cb552... Automatic translation import
   <string-array name="phoneTypes">
     <item>Casa</item>
     <item>Móvil</item>
@@ -528,6 +751,12 @@
   <string name="lockscreen_instructions_when_pattern_enabled">Primi la tecla de menú pa desbloquiar el teléfonu o facer una llamada d\'emerxencia.</string>
   <string name="lockscreen_instructions_when_pattern_disabled">Primi la tecla de menú pa desbloquiar la pantalla.</string>
   <string name="lockscreen_pattern_instructions">Dibuxar patrón de desbloquéu</string>
+<<<<<<< HEAD
+=======
+  <!-- Button at the bottom of the unlock screen to make an emergency call or access other emergency assistance functions. -->
+  <string name="lockscreen_emergency_call">Emerxencia</string>
+  <!-- Button at the bottom of the unlock screen that lets the user return to a call -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="lockscreen_return_to_call">Volver a llamada</string>
   <string name="lockscreen_pattern_correct">Correutu</string>
   <string name="lockscreen_pattern_wrong">Vuelvi a intentalo</string>
@@ -902,7 +1131,22 @@
   <string name="dlg_confirm_kill_storage_users_text">Si actives l\'almacenamientu USB, van parase dalgunes aplicaciones que tas usando y ye dable que nun tean disponibles hasta que lu desactives.</string>
   <string name="dlg_error_title">Fallu de funcionamientu de USB</string>
   <string name="dlg_ok">Aceutar</string>
+<<<<<<< HEAD
   <string name="usb_accessory_notification_title">Coneutáu a un accesoriu USB</string>
+=======
+  <!-- USB_PREFERENCES: Notification for when the user connected to the charger only.  This is the title -->
+  <!-- USB_PREFERENCES: Notification for when the user connects the phone to a computer via USB in MTP mode.  This is the title -->
+  <string name="usb_mtp_notification_title">USB pa tresferir ficheros</string>
+  <!-- USB_PREFERENCES: Notification for when the user connects the phone to a computer via USB in PTP mode.  This is the title -->
+  <string name="usb_ptp_notification_title">USB pa tresferir semeyes</string>
+  <!-- USB_PREFERENCES: Notification for when the user connects the phone to a computer via USB in MIDI mode.  This is the title -->
+  <string name="usb_midi_notification_title">USB pa MIDI</string>
+  <!-- USB_PREFERENCES: Notification for when a USB accessory is attached.  This is the title -->
+  <string name="usb_accessory_notification_title">Coneutáu a un accesoriu USB</string>
+  <!-- See USB_PREFERENCES. This is the message. -->
+  <string name="usb_notification_message">Toca pa más opciones.</string>
+  <!-- Title of notification shown when ADB is actively connected to the phone. -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="adb_active_notification_title">Depuración USB coneutada</string>
   <string name="adb_active_notification_message">Toca pa desactivar la depuración USB.</string>
   <string name="select_input_method">Cambiar tecláu</string>
@@ -914,12 +1158,96 @@
   <string name="fast_scroll_alphabet"> ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
   <string name="fast_scroll_numeric_alphabet"> 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
   <string name="candidates_style"><u>candidatos</u></string>
+<<<<<<< HEAD
   <string name="ext_media_status_checking">Comprobando\u2026</string>
+=======
+  <!-- External media notification strings -->
+  <!-- Notification title when external media is being checked [CHAR LIMIT=30] -->
+  <string name="ext_media_checking_notification_title">Tresnando\'l mediu <xliff:g id="name" example="SD card">%s</xliff:g></string>
+  <!-- Notification body when external media is being checked [CHAR LIMIT=NONE] -->
+  <string name="ext_media_checking_notification_message">Verificando fallos</string>
+  <!-- Notification body when new external media is detected [CHAR LIMIT=NONE] -->
+  <string name="ext_media_new_notification_message">Deteutóse <xliff:g id="name" example="SD card">%s</xliff:g> nuevu</string>
+  <!-- Notification body when external media is ready for use [CHAR LIMIT=NONE] -->
+  <string name="ext_media_ready_notification_message">Pa tresferir semeyes y conteníu multimedia</string>
+  <!-- Notification title when external media is unmountable (corrupt) [CHAR LIMIT=30] -->
+  <string name="ext_media_unmountable_notification_title"><xliff:g id="name" example="SD card">%s</xliff:g> ta dañáu</string>
+  <!-- Notification body when external media is unmountable (corrupt) [CHAR LIMIT=NONE] -->
+  <string name="ext_media_unmountable_notification_message"><xliff:g id="name" example="SD card">%s</xliff:g> ta dañáu. Toca pa iguar.</string>
+  <!-- Notification title when external media is unsupported [CHAR LIMIT=30] -->
+  <string name="ext_media_unsupported_notification_title"><xliff:g id="name" example="SD card">%s</xliff:g> non compatible</string>
+  <!-- Notification body when external media is unsupported [CHAR LIMIT=NONE] -->
+  <string name="ext_media_unsupported_notification_message">El preséu nun ye compatible con <xliff:g id="name" example="SD card">%s</xliff:g>. Toca la pantalla pa configuralu nun formatu compatible.</string>
+  <!-- Notification title when external media is unsafely removed [CHAR LIMIT=30] -->
+  <string name="ext_media_badremoval_notification_title">Desmontóse <xliff:g id="name" example="SD card">%s</xliff:g> de mou inesperáu.</string>
+  <!-- Notification body when external media is unsafely removed [CHAR LIMIT=NONE] -->
+  <string name="ext_media_badremoval_notification_message">Pa evitar perda de datos, desactiva\'l preséu <xliff:g id="name" example="SD card">%s</xliff:g> enantes d\'estrayelu</string>
+  <!-- Notification title when external media is missing [CHAR LIMIT=30] -->
+  <string name="ext_media_nomedia_notification_title">Estráxose <xliff:g id="name" example="SD card">%s</xliff:g></string>
+  <!-- Notification body when external media is missing [CHAR LIMIT=NONE] -->
+  <string name="ext_media_nomedia_notification_message"><xliff:g id="name" example="SD card">%s</xliff:g> estrayíu; inxerta ún nuevu</string>
+  <!-- Notification title when external media is unmounting [CHAR LIMIT=30] -->
+  <string name="ext_media_unmounting_notification_title">Espulsando\'l mediu <xliff:g id="name" example="SD card">%s</xliff:g>\u2026</string>
+  <!-- Notification body when external media is unmounting [CHAR LIMIT=NONE] -->
+  <string name="ext_media_unmounting_notification_message">Nun estrayer</string>
+  <!-- Notification action to setup external media [CHAR LIMIT=20] -->
+  <string name="ext_media_init_action">Configurar</string>
+  <!-- Notification action to unmount external media [CHAR LIMIT=20] -->
+  <string name="ext_media_unmount_action">Espulsar</string>
+  <!-- Notification action to browse external media [CHAR LIMIT=20] -->
+  <string name="ext_media_browse_action">Esplorar</string>
+  <!-- Notification title when external media is missing [CHAR LIMIT=30] -->
+  <string name="ext_media_missing_title">Nun s\'atopa <xliff:g id="name" example="SD card">%s</xliff:g></string>
+  <!-- Notification body when external media is missing [CHAR LIMIT=30] -->
+  <string name="ext_media_missing_message">Volver a inxertar preséu</string>
+  <!-- Notification title when moving an application to external storage [CHAR LIMIT=30] -->
+  <string name="ext_media_move_specific_title">Moviendo <xliff:g id="name" example="Calculator">%s</xliff:g></string>
+  <!-- Notification title when moving data to external storage [CHAR LIMIT=32] -->
+  <string name="ext_media_move_title">Moviendo datos</string>
+  <!-- Notification title when moving data to external storage [CHAR LIMIT=32] -->
+  <string name="ext_media_move_success_title">Tresferencia completa</string>
+  <!-- Notification title when moving data to external storage [CHAR LIMIT=64] -->
+  <string name="ext_media_move_success_message">Tresfiriéronse los datos a <xliff:g id="name" example="SD card">%s</xliff:g></string>
+  <!-- Notification title when moving data to external storage failed [CHAR LIMIT=32] -->
+  <string name="ext_media_move_failure_title">Nun pudieron tresferise datos</string>
+  <!-- Notification title when moving data to external storage failed [CHAR LIMIT=64] -->
+  <string name="ext_media_move_failure_message">Los datos quedaron na llocalización orixinal</string>
+  <!-- Short summary of storage media status when removed [CHAR LIMIT=32] -->
+  <string name="ext_media_status_removed">Estrayíu</string>
+  <!-- Short summary of storage media status when unmounted [CHAR LIMIT=32] -->
+  <string name="ext_media_status_unmounted">Espulsáu</string>
+  <!-- Short summary of storage media status when checking [CHAR LIMIT=32] -->
+  <string name="ext_media_status_checking">Comprobando\u2026</string>
+  <!-- Short summary of storage media status when mounted [CHAR LIMIT=32] -->
+  <string name="ext_media_status_mounted">Llistu</string>
+  <!-- Short summary of storage media status when mounted read-only [CHAR LIMIT=32] -->
+  <string name="ext_media_status_mounted_ro">Namái-llectura</string>
+  <!-- Short summary of storage media status when removed unsafely [CHAR LIMIT=32] -->
+  <string name="ext_media_status_bad_removal">Nun s\'estraxo de mou seguru</string>
+  <!-- Short summary of storage media status when unmountable [CHAR LIMIT=32] -->
+  <string name="ext_media_status_unmountable">Toyíu</string>
+  <!-- Short summary of storage media status when unsupported [CHAR LIMIT=32] -->
+  <string name="ext_media_status_unsupported">Non compatible</string>
+  <!-- Short summary of storage media status when ejecting [CHAR LIMIT=32] -->
+  <string name="ext_media_status_ejecting">Espulsando\u2026</string>
+  <!-- Short summary of storage media status when formatting [CHAR LIMIT=32] -->
+  <string name="ext_media_status_formatting">Formatiando\u2026</string>
+  <!-- Short summary of storage media status when missing [CHAR LIMIT=32] -->
+  <string name="ext_media_status_missing">Non inxertáu</string>
+  <!-- Shown in LauncherActivity when the requested target Intent didn't return any matching Activities, leaving the list empty. -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="activity_list_empty">Nun s\'atopó nenguna actividá coincidente.</string>
   <string name="permlab_route_media_output">Dirixir salida de mediu</string>
   <string name="permdesc_route_media_output">Permite que l\'aplicación dirixa salides de medios a otros preseos esternos.</string>
   <string name="permlab_readInstallSessions">Consultar sesiones d\'instalación</string>
   <string name="permdesc_readInstallSessions">Permite qu\'una aplicación consulte sesiones d\'instalación pa ver detalles tocante a instalaciones de paquetes activos.</string>
+<<<<<<< HEAD
+=======
+  <!-- Title of an application permission that lets it read install sessions. -->
+  <!-- Description of an application permission that lets it read install sessions. -->
+  <string name="permdesc_requestInstallPackages">Permite qu\'una app solicite la instalación de paquetes.</string>
+  <!-- Shown in the tutorial for tap twice for zoom control. -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="tutorial_double_tap_to_zoom_message_short">Toca dos vegaes p\'acceder al control de zoom.</string>
   <string name="gadget_host_error_inflating">Nun pudo amestase\'l widget.</string>
   <string name="ime_action_go">Dir</string>
@@ -1005,6 +1333,15 @@
   <string name="date_picker_decrement_day_button">Amenorgar díes</string>
   <string name="date_picker_increment_year_button">Aumentar añu</string>
   <string name="date_picker_decrement_year_button">Amenorgar año</string>
+<<<<<<< HEAD
+=======
+  <!-- Description of the button to move to the previous month. [CHAR LIMIT=NONE] -->
+  <string name="date_picker_prev_month_button">Mes anterior</string>
+  <!-- Description of the button to move to the next month. [CHAR LIMIT=NONE] -->
+  <string name="date_picker_next_month_button">Mes siguiente</string>
+  <!-- KeyboardView - accessibility support -->
+  <!-- Description of the Alt button in a KeyboardView. [CHAR LIMIT=NONE] -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="keyboardview_keycode_alt">Alt</string>
   <string name="keyboardview_keycode_cancel">Encaboxar</string>
   <string name="keyboardview_keycode_delete">Desaniciar</string>
@@ -1027,6 +1364,16 @@
   <string name="action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
   <string name="storage_internal">Almacenamientu internu</string>
   <string name="storage_sd_card">Tarxeta SD</string>
+<<<<<<< HEAD
+=======
+  <!-- Storage description for a SD card from a specific manufacturer. [CHAR LIMIT=NONE] -->
+  <string name="storage_sd_card_label">Tarxeta SD de <xliff:g id="manufacturer" example="SanDisk">%s</xliff:g></string>
+  <!-- Storage description for a generic USB drive. [CHAR LIMIT=NONE] -->
+  <string name="storage_usb_drive">Unidá USB</string>
+  <!-- Storage description for a USB drive from a specific manufacturer. [CHAR LIMIT=NONE] -->
+  <string name="storage_usb_drive_label">Unidá USB de <xliff:g id="manufacturer" example="Seagate">%s</xliff:g></string>
+  <!-- Storage description for USB storage. [CHAR LIMIT=NONE] -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="storage_usb">Almacenamientu USB</string>
   <string name="data_usage_warning_title">Avisu d\'usu de datos</string>
   <string name="data_usage_warning_body">Toca pa ver l\'usu y axustes.</string>
@@ -1239,6 +1586,16 @@
   <string name="restr_pin_error_doesnt_match">Los númberos PIN nun concasen. Vuelvi a intentalo.</string>
   <string name="restr_pin_error_too_short">El PIN ye enforma curtiu. Tien de tener al menos 4 díxitos.</string>
   <string name="restr_pin_try_later">Volver a intentalo dempués</string>
+<<<<<<< HEAD
+=======
+  <!-- Cling help message title when hiding the navigation bar entering immersive mode [CHAR LIMIT=none] -->
+  <string name="immersive_cling_title">Visualización en pantalla completa</string>
+  <!-- Cling help message description when hiding the navigation bar entering immersive mode [CHAR LIMIT=none] -->
+  <string name="immersive_cling_description">Pa salir, esliza\'l deu hacia abaxo dende la parte superior.</string>
+  <!-- Cling help message confirmation button when hiding the navigation bar entering immersive mode [CHAR LIMIT=30] -->
+  <string name="immersive_cling_positive">Atalántolo</string>
+  <!-- Label for button to confirm chosen date or time [CHAR LIMIT=30] -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="done_label">Fecho</string>
   <string name="hour_picker_description">Control eslizante circular d\'hores</string>
   <string name="minute_picker_description">Control eslizante circular de minutos</string>
@@ -1249,13 +1606,83 @@
   <string name="deleted_key"><xliff:g id="key" example="4">%1$s</xliff:g> desaniciáu</string>
   <string name="managed_profile_label_badge"><xliff:g id="label" example="Email">%1$s</xliff:g> de trabayu</string>
   <string name="time_placeholder">--</string>
+<<<<<<< HEAD
+=======
+  <!-- DO NOT TRANSLATE -->
+  <!-- DO NOT TRANSLATE -->
+  <!-- DO NOT TRANSLATE -->
+  <string name="date_picker_month_typeface">sans-serif-medium</string>
+  <!-- DO NOT TRANSLATE -->
+  <string name="date_picker_day_of_week_typeface">sans-serif-medium</string>
+  <!-- DO NOT TRANSLATE -->
+  <string name="date_picker_day_typeface">sans-serif-medium</string>
+  <!-- Notify use that they are in Lock-to-app -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="lock_to_app_toast">Pa desactivar esta pantalla, caltén primíos al empar los botones de retrocesu y Visión xeneral.</string>
   <string name="lock_to_app_toast_accessible">Pa desactivar esta pantalla, caltén primíu\'l botón Visión xeneral.</string>
+<<<<<<< HEAD
+=======
+  <!-- Notify user that they are locked in lock-to-app mode -->
+  <string name="lock_to_app_toast_locked">L\'app ta fixada: nun se permite desfixala nesti preséu.</string>
+  <!-- Starting lock-to-app indication. -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="lock_to_app_start">Pantalla fixada</string>
   <string name="lock_to_app_exit">Pantalla desfixada</string>
   <string name="lock_to_app_unlock_pin">Solicitar PIN pa desactivar</string>
   <string name="lock_to_app_unlock_pattern">Solicitar patrón de desbloquéu pa desactivar</string>
   <string name="lock_to_app_unlock_password">Solicitar contraseña pa desactivar</string>
+<<<<<<< HEAD
+=======
+  <!-- Notification shown when device owner silently installs a package [CHAR LIMIT=NONE] -->
+  <string name="package_installed_device_owner">Instaláu pol alministrador</string>
+  <!-- Notification shown when device owner silently updates a package [CHAR LIMIT=NONE] -->
+  <string name="package_updated_device_owner">Anováu pol alministrador</string>
+  <!-- Notification shown when device owner silently deletes a package [CHAR LIMIT=NONE] -->
+  <string name="package_deleted_device_owner">Desaniciáu pol alministrador</string>
+  <!-- [CHAR_LIMIT=NONE] Battery saver: Feature description -->
+  <!-- Zen mode condition - summary: time duration in minutes. [CHAR LIMIT=NONE] -->
+  <!-- Zen mode condition - summary: time duration in minutes (short version). [CHAR LIMIT=NONE] -->
+  <plurals name="zen_mode_duration_minutes_summary_short">
+    <item quantity="one">Mentanto 1 min (hasta la(les) <xliff:g id="formattedTime" example="10:00 PM">%2$s</xliff:g>)</item>
+    <item quantity="other">Mentanto %1$d mins (hasta la(les) <xliff:g id="formattedTime" example="10:00 PM">%2$s</xliff:g>)</item>
+  </plurals>
+  <!-- Zen mode condition - summary: time duration in hours. [CHAR LIMIT=NONE] -->
+  <!-- Zen mode condition - summary: time duration in hours (short version). [CHAR LIMIT=NONE] -->
+  <plurals name="zen_mode_duration_hours_summary_short">
+    <item quantity="one">Mentanto 1 hr (hasta la(les) <xliff:g id="formattedTime" example="10:00 PM">%2$s</xliff:g>)</item>
+    <item quantity="other">Mentanto %1$d hrs (hasta la(les) <xliff:g id="formattedTime" example="10:00 PM">%2$s</xliff:g>)</item>
+  </plurals>
+  <!-- Zen mode condition - line one: time duration in minutes. [CHAR LIMIT=NONE] -->
+  <plurals name="zen_mode_duration_minutes">
+    <item quantity="one">Mientres un minutu</item>
+    <item quantity="other">Mientres %d minutos</item>
+  </plurals>
+  <!-- Zen mode condition - line one: time duration in minutes (short version). [CHAR LIMIT=NONE] -->
+  <plurals name="zen_mode_duration_minutes_short">
+    <item quantity="one">Mentanto 1 min</item>
+    <item quantity="other">Mentanto %d mins</item>
+  </plurals>
+  <!-- Zen mode condition - line one: time duration in hours. [CHAR LIMIT=NONE] -->
+  <plurals name="zen_mode_duration_hours">
+    <item quantity="one">Mientres una hora</item>
+    <item quantity="other">Mientres %d hores</item>
+  </plurals>
+  <!-- Zen mode condition - line one: time duration in hours (short version). [CHAR LIMIT=NONE] -->
+  <plurals name="zen_mode_duration_hours_short">
+    <item quantity="one">Mentanto 1 hr</item>
+    <item quantity="other">Mentanto %d hrs</item>
+  </plurals>
+  <!-- Zen mode condition - line two: ending time. [CHAR LIMIT=NONE] -->
+  <!-- Zen mode condition - line one: Until next alarm. [CHAR LIMIT=NONE] -->
+  <string name="zen_mode_alarm">Hasta les <xliff:g id="formattedTime" example="10:00 PM">%1$s</xliff:g> hores (próxima alarma)</string>
+  <!-- Zen mode condition: no exit criteria. [CHAR LIMIT=NONE] -->
+  <string name="zen_mode_forever">Hasta que lo desactives</string>
+  <!-- Zen mode condition: no exit criteria, includes the name of the feature for emphasis. [CHAR LIMIT=NONE] -->
+  <string name="zen_mode_forever_dnd">Hasta que desactives Nun molestar</string>
+  <!-- Zen mode active automatic rule name separator. [CHAR LIMIT=NONE] -->
+  <!-- Content description for the Toolbar icon used to collapse an expanded action mode. [CHAR LIMIT=NONE] -->
+  <!-- Zen mode - feature name. [CHAR LIMIT=40] -->
+>>>>>>> 20cb552... Automatic translation import
   <string name="zen_mode_feature_name">Nun molestar</string>
   <string name="floating_toolbar_open_overflow_description">Más opciones</string>
 </resources>

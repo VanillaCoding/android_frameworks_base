@@ -143,4 +143,22 @@
   <string name="hotspot_apm_message">Nelze se připojit k mobilním datům při zapnutém režimu „Letadlo“. Vypněte tento režim a zkuste to znovu.</string>
   <string name="quick_settings_tile_flashlight_not_title">Svítilna zapnuta</string>
   <string name="quick_settings_tile_flashlight_not_summary">Dotykem vypněte</string>
+<<<<<<< HEAD
+=======
+  <!-- Wi-Fi hotspot label when enabled -->
+  <plurals name="wifi_hotspot_connected_clients_label">
+    <item quantity="one">%1$d klient</item>
+    <item quantity="few">%1$d klienti</item>
+    <item quantity="other">%1$d klientů</item>
+  </plurals>
+  <!-- CellularTile data sim not configured state string -->
+  <string name="data_sim_not_configured">Žádná SIM pro data</string>
+  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_dock_battery_level">Baterie doku: <xliff:g id="number">%d</xliff:g>\u0025.</string>
+  <!-- Play queue -->
+  <string name="play_queue_extention">Zobrazit frontu přehrávání</string>
+  <!-- Path data for portrait battery -->
+  <!-- Path data for landscape battery -->
+  <!-- Path data for circle battery -->
+>>>>>>> 20cb552... Automatic translation import
 </resources>

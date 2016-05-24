@@ -21,4 +21,9 @@
   <string name="bugreport_finished_text" product="default">Toca pa compartir l\'informe de fallu</string>
   <string name="bugreport_confirm">Los informes de fallos contienen datos de los distintos ficheros de rexistru del sistema, incluyida información personal y privada. Comparte los informes de fallos namái con aplicaciones y usuarios nos que confíes.</string>
   <string name="bugreport_confirm_repeat">Amosar esti mensaxe la próxima vegada</string>
+<<<<<<< HEAD
+=======
+  <!-- Title for documents backend that offers bugreports. -->
+  <string name="bugreport_storage_title">Informes de fallu</string>
+>>>>>>> 20cb552... Automatic translation import
 </resources>

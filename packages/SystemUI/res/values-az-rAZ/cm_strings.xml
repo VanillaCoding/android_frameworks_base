@@ -116,4 +116,19 @@
   <string name="accessibility_quick_settings_location_changed_battery_saving">Yer bildirişi batereyaya qənaət rejiminə keçdi.</string>
   <string name="accessibility_quick_settings_location_changed_gps_only">Yer bildirişi yalnız sensorlar rejiminə keçdi.</string>
   <string name="accessibility_quick_settings_location_changed_high_accuracy">Yer bildirişi yüksək dəqiqlik rejiminə keçdi.</string>
+<<<<<<< HEAD
+=======
+  <!-- detail header when adding a tile -->
+  <!-- Hotspot dialog message -->
+  <!-- Notification which notifies user flashlight is enabled -->
+  <!-- Wi-Fi hotspot label when enabled -->
+  <!-- CellularTile data sim not configured state string -->
+  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_dock_battery_level">Modul batareya faizi <xliff:g id="number">%d</xliff:g>.</string>
+  <!-- Play queue -->
+  <string name="play_queue_extention">Oynatma sırasını göstər</string>
+  <!-- Path data for portrait battery -->
+  <!-- Path data for landscape battery -->
+  <!-- Path data for circle battery -->
+>>>>>>> 20cb552... Automatic translation import
 </resources>

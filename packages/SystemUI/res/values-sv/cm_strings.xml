@@ -143,4 +143,21 @@
   <string name="hotspot_apm_message">Det går inte att ansluta till mobila nät när flygplansläge är aktiverat. Inaktivera flygplansläge och försök igen.</string>
   <string name="quick_settings_tile_flashlight_not_title">Ficklampan är på</string>
   <string name="quick_settings_tile_flashlight_not_summary">Tryck för att stänga av</string>
+<<<<<<< HEAD
+=======
+  <!-- Wi-Fi hotspot label when enabled -->
+  <plurals name="wifi_hotspot_connected_clients_label">
+    <item quantity="one">%1$d klient</item>
+    <item quantity="other">%1$d klienter</item>
+  </plurals>
+  <!-- CellularTile data sim not configured state string -->
+  <string name="data_sim_not_configured">Inget data SIM</string>
+  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_dock_battery_level">Dockningsstationens batteri<xliff:g id="number">%d</xliff:g> procent.</string>
+  <!-- Play queue -->
+  <string name="play_queue_extention">Visa uppspelningskö</string>
+  <!-- Path data for portrait battery -->
+  <!-- Path data for landscape battery -->
+  <!-- Path data for circle battery -->
+>>>>>>> 20cb552... Automatic translation import
 </resources>

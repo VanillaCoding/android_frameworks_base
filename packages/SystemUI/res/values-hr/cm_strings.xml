@@ -143,4 +143,22 @@
   <string name="hotspot_apm_message">Nije moguće povezivanje s mobilnim mrežama dok je omogućen način rada u zrakoplovu. Onemogućite način rada u zrakoplovu i pokušajte ponovno.</string>
   <string name="quick_settings_tile_flashlight_not_title">Svjetiljka je uključena</string>
   <string name="quick_settings_tile_flashlight_not_summary">Dodirnite za isključivanje</string>
+<<<<<<< HEAD
+=======
+  <!-- Wi-Fi hotspot label when enabled -->
+  <plurals name="wifi_hotspot_connected_clients_label">
+    <item quantity="one">%1$d klijent</item>
+    <item quantity="few">%1$d klijenta</item>
+    <item quantity="other">%1$d klijenata</item>
+  </plurals>
+  <!-- CellularTile data sim not configured state string -->
+  <string name="data_sim_not_configured">Nema SIM podatkovne kartice</string>
+  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_dock_battery_level">Dock baterija <xliff:g id="number">%d</xliff:g> postotak.</string>
+  <!-- Play queue -->
+  <string name="play_queue_extention">Prikaži listu za reprodukciju</string>
+  <!-- Path data for portrait battery -->
+  <!-- Path data for landscape battery -->
+  <!-- Path data for circle battery -->
+>>>>>>> 20cb552... Automatic translation import
 </resources>

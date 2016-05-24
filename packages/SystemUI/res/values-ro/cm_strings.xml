@@ -120,4 +120,19 @@
   <string name="hotspot_apm_message">Nu se poate conecta la rețele mobile în timp ce modul Avion este activat. Dezactivați modul Avion și încercați din nou.</string>
   <string name="quick_settings_tile_flashlight_not_title">Lanterna este pornită</string>
   <string name="quick_settings_tile_flashlight_not_summary">Atingeți pentru a dezactiva</string>
+<<<<<<< HEAD
+=======
+  <!-- Wi-Fi hotspot label when enabled -->
+  <plurals name="wifi_hotspot_connected_clients_label">
+    <item quantity="one">%1$d client</item>
+    <item quantity="few">%1$d clienți</item>
+    <item quantity="other">%1$d clienți</item>
+  </plurals>
+  <!-- CellularTile data sim not configured state string -->
+  <!-- Content description of the dock battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <!-- Play queue -->
+  <!-- Path data for portrait battery -->
+  <!-- Path data for landscape battery -->
+  <!-- Path data for circle battery -->
+>>>>>>> 20cb552... Automatic translation import
 </resources>
